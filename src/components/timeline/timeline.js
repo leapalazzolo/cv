@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { config } from 'react-awesome-styled-grid'
-import siteConfig from '../../../data/siteConfig'
 
-const Timeline = ({ className }) => {
+const Timeline = props => {
+  const { className, jobs } = props;
   return (
     <div className={className}>
       <h1>Experience</h1>
-      {siteConfig.jobs && siteConfig.jobs.map(job => (
+      {jobs && jobs.map(job => (
         <article key={job.begin.month + job.begin.year} className='timeline__item'>
           <div className="inner">
             <span className="timeline__date">

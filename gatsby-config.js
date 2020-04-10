@@ -1,14 +1,23 @@
-const config = require("./data/siteConfig");
+const config = require('./data/siteConfig')
 
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,
     author: config.authorName,
-    ...config
+    ...config,
   },
   pathPrefix: config.pathPrefix,
   plugins: [
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/data/intl`,
+        languages: [`en`, `es`],
+        defaultLanguage: `en`,
+        redirect: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

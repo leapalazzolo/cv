@@ -1,12 +1,8 @@
 import React from "react";
-import jsonFetch from "simple-json-fetch";
 import styled from 'styled-components'
-import siteConfig from '../../../data/siteConfig'
 
 import Loader from '../loader'
 
-const endpoint =
-  `https://api.github.com/users/${siteConfig.githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`
 
 
 class Repositories extends React.Component {
@@ -18,10 +14,7 @@ class Repositories extends React.Component {
     }
   }
   async componentDidMount () {
-    const repos = await jsonFetch(endpoint);
-    if (repos.json && repos.json.length) {
-      this.setState({ repos: repos.json, status: 'ready' })
-    }
+
   }
   render () {
     const { status } = this.state
