@@ -1,39 +1,46 @@
 module.exports = {
-  siteTitle: 'Hi! I\'m Francisco!',
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
+  siteTitle: 'CV',
+  siteDescription: `Leandro Palazzolo's curriculum vitae`,
   keyWords: ['gatsbyjs', 'react', 'curriculum'],
-  authorName: 'Francisco Santos',
-  twitterUsername: '_franciscodf',
-  githubUsername: 'santosfrancisco',
-  authorAvatar: '/images/avatar.jpeg',
-  authorDescription: `Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />
-    In 2012 I started working as a support technician and I approached the developers.
-    In 2015, I started to study C # and started to contribute with the team giving maintenance in an application in C # and .NET. <br />
-    I currently work as a frontend developer and mainly work with <strong>Javascript, NodeJS e React.</strong>`,
+  authorName: 'Leandro Palazzolo',
+  twitterUsername: '_LeaplgZ',
+  githubUsername: 'leapalazzolo',
+  authorAvatar: '/images/avatar.jpg',
   skills: [
     {
-      name: 'HTML',
-      level: 70
+      name: 'Python',
+      level: 90
     },
     {
-      name: 'CSS',
-      level: 60
+      name: 'DevOps',
+      level: 85
     },
     {
-      name: 'Javascript',
-      level: 50
-    },
-    {
-      name: 'NodeJs',
-      level: 40
+      name: 'Azure',
+      level: 85
     },
     {
       name: 'React',
-      level: 60
+      level: 75
     },
     {
-      name: 'Git',
-      level: 70
+      name: 'MongoDB',
+      level: 65
+    }
+  ],
+  courses: [
+    {
+      name: "CCNA",
+      date: "22/10/2018",
+      license: "CSO1234",
+      url: "http://asd.com",
+      certification: true,
+    },
+
+    {
+      name: "RHEL",
+      date: "22/10/2018",
+      certification: false,
     }
   ],
   jobs: [
@@ -85,7 +92,7 @@ module.exports = {
   icon: 'src/assets/gatsby-icon.png',
   headerLinks: [
     {
-      label: 'Francisco Santos',
+      label: 'Leandro Palazzolo',
       url: '/',
     }
   ]

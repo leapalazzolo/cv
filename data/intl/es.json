@@ -12,5 +12,6 @@
       "occupation": "Frontend developer",
       "description": "ASD"
   
-    }]
+    }],
+  "categories": ["Bio", "Habilidades", "Experiencia", "Cursos"]
 }

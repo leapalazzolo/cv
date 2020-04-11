@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { FaGithub } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -47,14 +47,15 @@ const HeaderLink = styled(Link)`
   min-width: 42px;
   z-index: 10;
 `
-const GithubLink = styled((props) => (
+
+const LinkedInLink = styled(props => (
   <a
     className={props.className}
-    href={`https://github.com/${props.githubUsername}`}
+    href={props.url}
     target="_blank"
     rel="noopener noreferrer"
   >
-    <FaGithub size={32} />
+    <FaLinkedin className="social-icon" size="32" />
   </a>
 ))`
   position: relative;
@@ -72,7 +73,7 @@ const GithubLink = styled((props) => (
 
 class Header extends React.Component {
   render() {
-    const { headerLinks, githubUsername } = this.props
+    const { headerLinks, url } = this.props
 
     return (
       <HeaderWrapper>
@@ -84,7 +85,7 @@ class Header extends React.Component {
               </HeaderLink>
             ))}
           </HeaderLinkGroup>
-          <GithubLink githubUsername={githubUsername} />
+          <LinkedInLink url={url} />
         </HeaderNav>
       </HeaderWrapper>
     )

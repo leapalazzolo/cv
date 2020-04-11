@@ -4,11 +4,11 @@ import { ResetCSS, GlobalStyle } from '../styles'
 import Header from '../header'
 
 const Layout = props => {
-  const { headerLinks, children, githubUsername } = props
+  const { headerLinks, children, url } = props
 
   return (
     <React.Fragment>
-      <Header headerLinks={headerLinks} githubUsername={githubUsername}/>
+      <Header headerLinks={headerLinks} url={url}/>
       <ResetCSS />
       <GlobalStyle />
       <div>{children}</div>

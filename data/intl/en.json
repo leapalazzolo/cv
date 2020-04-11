@@ -11,5 +11,7 @@
       "duration": "",
       "occupation": "Frontend developer",
       "description": "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
-    }]
+    }
+  ],
+  "categories": ["About", "Skills", "Experience", "Courses"]
 }

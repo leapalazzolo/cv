@@ -10,7 +10,7 @@ import Wrapper from '../wrapper'
 import About from '../about'
 import Skills from '../skills'
 import Timeline from '../timeline'
-import Repositories from '../repositories'
+import Courses from '../courses'
 
 const Separator = styled.hr`
   margin-top: 24px;
@@ -32,7 +32,7 @@ class Home extends React.Component {
       <Layout
         location={this.props.location}
         headerLinks={this.props.siteConfig.headerLinks}
-        githubUsername={this.props.siteConfig.githubUsername}
+        url={this.props.siteConfig.social.linkedin}
       >
         <SEO title={title} keywords={keywords} />
 
@@ -92,9 +92,9 @@ class Home extends React.Component {
               </Col>
             </Row>
             <Separator />
-            <Timeline jobs={this.props.siteConfig.jobs}/>
+            <Timeline jobs={this.props.siteConfig.jobs} />
             <Separator />
-            <Repositories />
+            <Courses courses={this.props.siteConfig.courses}/>
           </Container>
         </Wrapper>
       </Layout>
