@@ -4,6 +4,7 @@ import { config } from 'react-awesome-styled-grid'
 
 const Timeline = props => {
   const { className, jobs } = props;
+  console.log(jobs);
   return (
     <div className={className}>
       <h1>Experience</h1>

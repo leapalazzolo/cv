@@ -92,7 +92,7 @@ class Home extends React.Component {
               </Col>
             </Row>
             <Separator />
-            <Timeline jobs={this.props.siteConfig.jobs} />
+            <Timeline jobs={this.props.jobs} />
             <Separator />
             <Courses courses={this.props.siteConfig.courses}/>
           </Container>

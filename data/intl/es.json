@@ -8,10 +8,10 @@
         "month": "apr",
         "year": "2018"
       },
-      "duration": "null",
-      "occupation": "Frontend developer",
+      "duration": "Presente",
+      "occupation": "Desarrollador",
       "description": "ASD"
-  
-    }],
+    }
+  ],
   "categories": ["Bio", "Habilidades", "Experiencia", "Cursos"]
 }
