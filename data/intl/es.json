@@ -86,7 +86,12 @@
     "about": "Sobre mi",
     "skills": "Habilidades",
     "experience": "Experiencia",
-    "courses" : "Cursos",
+    "courses": "Cursos",
     "certified": "Certificado"
-  } 
+  },
+  "404": {
+    "title": "404 Página no encontrada",
+    "description": "Parece que has seguido un enlace roto o ingresado una URL que no existe en este sitio",
+    "seo": "Página no encontrada"
+  }
 }

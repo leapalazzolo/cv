@@ -1,11 +1,17 @@
 module.exports = {
-  siteTitle: "Leandro Palazzolo CV",
+  siteTitle: 'Leandro Palazzolo CV',
   siteDescription: 'Leandro Palazzolo - Curriculum vitae',
   keyWords: ['gatsbyjs', 'react', 'curriculum', 'cv', 'devops', 'sre', 'azure'],
   authorName: 'Leandro Palazzolo',
   twitterUsername: '_LeaplgZ',
   githubUsername: 'leapalazzolo',
   authorAvatar: '/images/avatar.jpg',
+  error: {
+    image: '/images/404.jpeg',
+    title: '404',
+    icon: '/images/ufo-and-cow.svg',
+    altIcon: 'ufo and cow',
+  },
   jobsNumber: 6,
   skills: [
     {
@@ -53,42 +59,47 @@ module.exports = {
       name: 'Certified ScrumMaster®',
       date: '05/2018',
       license: '787340',
-      url: "https://www.scrumalliance.org/community/profile/lpalazzolo",
+      url: 'https://www.scrumalliance.org/community/profile/lpalazzolo',
       certification: true,
     },
     {
       name: 'Certified SAFe® 4 Practitioner',
       date: '05/2018',
       license: '17672922',
-      url: "https://www.youracclaim.com/badges/0897b120-daa1-4cdf-8300-e1c1dcf2b9b1",
+      url:
+        'https://www.youracclaim.com/badges/0897b120-daa1-4cdf-8300-e1c1dcf2b9b1',
       certification: true,
     },
     {
       name: 'AZ-900: Microsoft Azure Fundamentals',
       date: '08/2019',
       license: '787340',
-      url: "https://www.youracclaim.com/badges/0897b120-daa1-4cdf-8300-e1c1dcf2b9b1",
+      url:
+        'https://www.youracclaim.com/badges/0897b120-daa1-4cdf-8300-e1c1dcf2b9b1',
       certification: true,
     },
     {
       name: 'Splunk fundamentals I',
       date: '04/2019',
-      url: "https://education.splunk.com/award/completion/81d1e230-926a-319b-9aa5-1e98219df953",
+      url:
+        'https://education.splunk.com/award/completion/81d1e230-926a-319b-9aa5-1e98219df953',
     },
     {
       name: 'Splunk fundamentals II',
       date: '04/2019',
-      url: "https://education.splunk.com/award/completion/cb0d22a7-1515-3d0f-a380-14f53ae830fb",
+      url:
+        'https://education.splunk.com/award/completion/cb0d22a7-1515-3d0f-a380-14f53ae830fb',
     },
     {
       name: 'M220P: MongoDB for Python Developers',
       date: '10/2019',
-      url: "http://university.mongodb.com/course_completion/2b780a24-987d-4837-8de5-3c60fd9cf504",
+      url:
+        'http://university.mongodb.com/course_completion/2b780a24-987d-4837-8de5-3c60fd9cf504',
     },
     {
       name: 'Red Hat (RH134) System Administration II - RHEL8',
       date: '12/2019',
-      },
+    },
     {
       name: 'Lynda.com: DevOps Foundations: DevSecOps',
     },
@@ -96,10 +107,11 @@ module.exports = {
       name: 'Lynda.com: DevSecOps: Automated Security Testing',
     },
     {
-      name: 'Lynda.com: DevSecOps: Building a Secure Continuous Delivery Pipeline',
+      name:
+        'Lynda.com: DevSecOps: Building a Secure Continuous Delivery Pipeline',
     },
     {
-      name: 'Lynda.com: JavaScript essential'
+      name: 'Lynda.com: JavaScript essential',
     },
     {
       name: 'Lynda.com: Node.js Essential Training',

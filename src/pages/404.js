@@ -1,10 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import { injectIntl } from 'gatsby-plugin-intl'
 
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Wrapper from '../components/wrapper'
 import SEO from '../components/SEO'
+
+import siteConfig from '../../data/siteConfig'
 
 const MainTitle = styled.h1`
   line-height: 1.5;
@@ -21,28 +24,28 @@ const Text = styled.p`
   text-align: center;
 `
 
-class NotFoundPage extends React.Component {
-  render() {
-    return (
-      <Layout location={this.props.location} noCover={true}>
-        <SEO title="Page Not Found" />
-        <Hero
-          heroImg='/images/404.jpeg'
-          title='404'
-        />
-        <Wrapper>
-          <MainTitle>404 Page Not Found</MainTitle>
-          <Icon>
-            <img src='/images/ufo-and-cow.svg' alt='ufo and cow' />
-          </Icon>
-          <Text>
-            Looks like you've followed a broken link or entered a URL that
-            doesn't exist on this site.
-          </Text>
-        </Wrapper>
-      </Layout>
-    )
-  }
+const NotFoundPage = (props) => {
+  const title = props.intl.formatMessage({ id: '404.title' })
+  const description = props.intl.formatMessage({ id: '404.description' })
+  const seo = props.intl.formatMessage({ id: '404.seo' })
+  const headerLinks = siteConfig.headerLinks
+  return (
+    <Layout
+      headerLinks={headerLinks}
+      location={props.location}
+      noCover={true}
+    >
+      <SEO title={seo} />
+      <Hero heroImg={siteConfig.error.image} title={siteConfig.error.title} />
+      <Wrapper>
+        <MainTitle>{title}</MainTitle>
+        <Icon>
+          <img src={siteConfig.error.icon} alt={siteConfig.error.altIcon} />
+        </Icon>
+        <Text>{description}</Text>
+      </Wrapper>
+    </Layout>
+  )
 }
 
-export default NotFoundPage
+export default injectIntl(NotFoundPage)

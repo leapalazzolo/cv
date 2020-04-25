@@ -2,7 +2,7 @@
   "language": "en",
   "tabTitle": "Leandro Palazzolo CV",
   "siteTitle": "Hi! I'm Leandro",
-  "authorDescription": "Developer specialized in the area of ​​infrastructure. Python expert. Follower of agile methodologies and DevOps practices. Preacher of the Cloud world. React and Gatsby Developer as a hobby."  ,
+  "authorDescription": "Developer specialized in the area of ​​infrastructure. Python expert. Follower of agile methodologies and DevOps practices. Preacher of the Cloud world. React and Gatsby Developer as a hobby.",
   "jobs": [
     {
       "company": "GiveMagic",
@@ -86,7 +86,12 @@
     "about": "About",
     "skills": "Skills",
     "experience": "Experience",
-    "courses" : "Courses",
+    "courses": "Courses",
     "certified": "Certified"
-  } 
+  },
+  "404": {
+    "title": "404 Page Not Found",
+    "description": "Looks like you've followed a broken link or entered a URL that doesn't exist on this site.",
+    "seo": "Page Not Found"
+  }
 }
