@@ -1,16 +1,16 @@
 module.exports = {
-  siteTitle: 'CV',
-  siteDescription: `Leandro Palazzolo - Curriculum vitae`,
+  siteTitle: "Leandro Palazzolo CV",
+  siteDescription: 'Leandro Palazzolo - Curriculum vitae',
   keyWords: ['gatsbyjs', 'react', 'curriculum', 'cv', 'devops', 'sre', 'azure'],
   authorName: 'Leandro Palazzolo',
   twitterUsername: '_LeaplgZ',
   githubUsername: 'leapalazzolo',
   authorAvatar: '/images/avatar.jpg',
-  jobsNumber: 1,
+  jobsNumber: 6,
   skills: [
     {
       name: 'Python',
-      level: 90,
+      level: 95,
     },
     {
       name: 'DevOps',
@@ -22,6 +22,14 @@ module.exports = {
     },
     {
       name: 'React',
+      level: 75,
+    },
+    {
+      name: 'Linux',
+      level: 75,
+    },
+    {
+      name: 'Containers',
       level: 75,
     },
     {
@@ -127,7 +135,7 @@ module.exports = {
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
+  icon: 'src/assets/icon.png',
   headerLinks: [
     {
       label: 'Leandro Palazzolo',

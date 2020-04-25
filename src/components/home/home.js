@@ -27,14 +27,22 @@ class Home extends React.Component {
     }
 
     const title = this.props.siteTitle
+    const tabTitle = this.props.tabTitle
     const { keywords } = this.props.siteConfig
+    console.log(this.props.siteConfig.headerLinks);
     return (
       <Layout
         location={this.props.location}
         headerLinks={this.props.siteConfig.headerLinks}
         url={this.props.siteConfig.social.linkedin}
       >
-        <SEO title={title} keywords={keywords} />
+        <SEO
+          title={tabTitle}
+          keywords={keywords}
+          lang={this.props.language}
+          description={this.props.authorDescription}
+          author={this.props.siteConfig.twitterUsername}
+        />
 
         <Hero heroImg={this.props.siteConfig.siteCover} title={title} />
 
@@ -85,16 +93,16 @@ class Home extends React.Component {
             </Row>
             <Row>
               <Col xs={4} sm={4}>
-                <About title="About" text={this.props.authorDescription} />
+                <About title={this.props.titles.about} text={this.props.authorDescription} />
               </Col>
               <Col xs={4} sm={4}>
-                <Skills title="Skills" skills={this.props.siteConfig.skills} />
+                <Skills title={this.props.titles.skills} skills={this.props.siteConfig.skills} />
               </Col>
             </Row>
             <Separator />
-            <Timeline jobs={this.props.jobs} />
+            <Timeline jobs={this.props.jobs} title={this.props.titles.experience} />
             <Separator />
-            <Courses courses={this.props.siteConfig.courses}/>
+            <Courses legend={this.props.titles.certified} courses={this.props.siteConfig.courses} title={this.props.titles.courses}/>
           </Container>
         </Wrapper>
       </Layout>

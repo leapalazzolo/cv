@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import SkillBar from './skill-bar'
 
-export default styled(({ className, title = 'Skills', skills = [] }) => {
+export default styled(({ className, title, skills = [] }) => {
   return (
     <div className={className}>
       <h1>{title}</h1>

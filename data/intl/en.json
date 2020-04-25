@@ -1,17 +1,92 @@
 {
+  "language": "en",
+  "tabTitle": "Leandro Palazzolo CV",
   "siteTitle": "Hi! I'm Leandro",
-  "authorDescription": "Developer, passionate about what I do. Always interested in how the sites were made, I started to study HTML by hobby. <br />. In 2012 I started working as a support technician and I approached the developers. In 2015, I started to study C # and started to contribute with the team giving maintenance in an application in C # and .NET. <br /> I currently work as a frontend developer and mainly work with <strong>Javascript, NodeJS e React.</strong>",
+  "authorDescription": "Developer specialized in the area of ​​infrastructure. Python expert. Follower of agile methodologies and DevOps practices. Preacher of the Cloud world. React and Gatsby Developer as a hobby."  ,
   "jobs": [
     {
-      "company": "SARASA",
+      "company": "GiveMagic",
       "begin": {
-        "month": "apr",
+        "month": "feb",
+        "year": "2020"
+      },
+      "present": false,
+      "duration": "Freelance",
+      "occupation": "Cloud DevOps Engineer",
+      "description": "Infrastructure migration to Azure."
+    },
+    {
+      "company": "Medallia",
+      "begin": {
+        "month": "dec",
+        "year": "2019"
+      },
+      "present": true,
+      "duration": "Presente",
+      "occupation": "Site Reliability Engineer",
+      "description": "Deploy and update applications within our systems foundation (compute, storage, network, etc.) Build monitoring automation and tooling to prove and maintain a world-class end-user experience. Debug and solve complex problems that may span the full service stack. Proactively monitor and manage the availability of infrastructure and applications. Optimize performance of components across the full service. Work closely with product-engineering teams to eliminate technical debt."
+    },
+    {
+      "company": "ExxonMobil",
+      "begin": {
+        "month": "jan",
         "year": "2018"
       },
-      "duration": "Present",
+      "present": false,
+      "duration": "2 years",
+      "occupation": "Network DevOps Engineer",
+      "description": "Webapps (React) and microservices (Python) development. Automate the deployment, configuration and maintenance of L2 / L3 networks (Cisco and Juniper). Create, implement and maintain a container strategy using OpenShift through pipelines. Maintain tools and technologies used in DevOps processes for continuous delivery and automation deployment. Development of Ansible playbooks and Python scripts to automate processes. Infrastructure migration to Azure Cloud."
+    },
+    {
+      "company": "Deloitte",
+      "begin": {
+        "month": "aug",
+        "year": "2016"
+      },
+      "present": false,
+      "duration": "1,5 years",
+      "occupation": "Security analyst",
+      "description": "Creation of vulnerability tests, risk analysis and security assessments. Investigation of security standards and security systems. Definition, implementation and maintenance of RSA Archer GRC."
+    },
+    {
+      "company": "Ministry of Defence",
+      "begin": {
+        "month": "jul",
+        "year": "2015"
+      },
+      "present": false,
+      "duration": "1,5 years",
+      "occupation": "System administration",
+      "description": "Configuration and monitoring with OSSIM. Virtualization (Xen). System administrator (Debian)"
+    },
+    {
+      "company": "J&B Solutions",
+      "begin": {
+        "month": "may",
+        "year": "2015"
+      },
+      "present": false,
+      "duration": "2 months",
+      "occupation": "Backend developer",
+      "description": "Backend development (PHP)."
+    },
+    {
+      "company": "Militec",
+      "begin": {
+        "month": "jan",
+        "year": "2014"
+      },
+      "present": false,
+      "duration": "12 months",
       "occupation": "Developer",
-      "description": "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
+      "description": "Develop desktop applications (Visual Basic .NET). IT support."
     }
   ],
-  "categories": ["About", "Skills", "Experience", "Courses"]
+  "titles": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "courses" : "Courses",
+    "certified": "Certified"
+  } 
 }

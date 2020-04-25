@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Courses = props => {
   return (
     <div className={props.className}>
-      <h2>Courses</h2>
+      <h2>{props.title}</h2>
       {props.courses && (
         <React.Fragment>
           <div className="courses__content">
@@ -21,7 +21,7 @@ const Courses = props => {
                       </div>
                     )}
                   {course.certification && (
-                    <div className="courses__course-star"> Certificado ★</div>
+                    <div className="courses__course-star"> {props.legend + " ★"} </div>
                   )}
                 </div>
                 <hr />
