@@ -3,6 +3,24 @@
   "tabTitle": "Leandro Palazzolo CV",
   "siteTitle": "Hola! Soy Leandro",
   "authorDescription": "Desarrollador especializado en el área de infraestructura. Experto en Python. Seguidor de las metodologías ágiles y las prácticas DevOps. Predicador del mundo Cloud. Desarrollador React y Gatsby como hobby.",
+  "education": [
+    {
+      "name": "Ingeniería en informática",
+      "place": "Universidad Nacional de La Matanza",
+      "date": {
+        "from": "04/2013",
+        "to": "12/2018"
+      }
+    },
+    {
+      "name": "Secundario con orientación en informática",
+      "place": "Instituto Juan XXIII",
+      "date": {
+        "from": "04/2007",
+        "to": "12/2012"
+      }
+    }
+  ],
   "jobs": [
     {
       "company": "GiveMagic",
@@ -24,7 +42,7 @@
       "present": true,
       "duration": "Presente",
       "occupation": "Site Reliability Engineer",
-      "description": "Crear automatización de monitoreo y herramientas para mantener la infraestructura. Resolver problemas complejos que pueden abarcar todo el conjunto de servicios. Monitorear y administrar proactivamente la disponibilidad de infraestructura y aplicaciones. Optimizar el rendimiento de los componentes de los servicios productivos. Colaborar con los equipos de ingeniería de productos para eliminar la deuda técnica."
+      "description": "Automatización de monitoreo y creación de herramientas para mantener la infraestructura. Monitorear y administrar proactivamente la disponibilidad de infraestructura y aplicaciones. Optimizar el rendimiento de los componentes de los servicios productivos. Colaborar con los equipos de ingeniería de productos para eliminar la deuda técnica."
     },
     {
       "company": "ExxonMobil",
@@ -35,7 +53,7 @@
       "present": false,
       "duration": "2 años",
       "occupation": "Network DevOps Engineer",
-      "description": "Desarrolo de webapps (React) y microservicios (Python). Automatizar el despliegue, la configuración y el mantenimiento de redes L2/L3 (Cisco y Juniper). Crear, implementar y mantener una estrategia de containers utilizando OpenShift mediante pipelines. Mantener herramientas y tecnologías utilizadas en los procesos de DevOps para la entrega continua y la implementación de automatización. Desarrollo de playbooks en Ansible y scripts en Python para automatizar procesos. Migración de la infraestructura hacia Azure Cloud."
+      "description": "Desarrolo de web (React) y de microservicios (Python). Automatizar el despliegue, la configuración y el mantenimiento de redes L2/L3 (Cisco y Juniper). Crear, implementar y mantener una estrategia de containers utilizando OpenShift mediante pipelines. Mantener herramientas y tecnologías utilizadas en los procesos de DevOps para la entrega continua y la implementación de automatización. Desarrollo de playbooks en Ansible y scripts en Python para automatizar procesos. Migración de la infraestructura hacia Azure Cloud."
     },
     {
       "company": "Deloitte",
@@ -87,11 +105,13 @@
     "skills": "Habilidades",
     "experience": "Experiencia",
     "courses": "Cursos",
-    "certified": "Certificado"
+    "certified": "Certificado",
+    "education": "Educación"
   },
+  "whatsappMessage": "Hola Leando. Te contacto porque vi tu CV online.",
   "404": {
-    "title": "404 Página no encontrada",
-    "description": "Parece que has seguido un enlace roto o ingresado una URL que no existe en este sitio",
+    "title": "Página no encontrada",
+    "description": "Parece que has seguido un enlace roto o ingresado una URL que no existe en este sitio.",
     "seo": "Página no encontrada"
   }
 }

@@ -24,17 +24,13 @@ const Text = styled.p`
   text-align: center;
 `
 
-const NotFoundPage = (props) => {
+const NotFoundPage = props => {
   const title = props.intl.formatMessage({ id: '404.title' })
   const description = props.intl.formatMessage({ id: '404.description' })
   const seo = props.intl.formatMessage({ id: '404.seo' })
   const headerLinks = siteConfig.headerLinks
   return (
-    <Layout
-      headerLinks={headerLinks}
-      location={props.location}
-      noCover={true}
-    >
+    <Layout headerLinks={headerLinks} location={props.location} noCover={true}>
       <SEO title={seo} />
       <Hero heroImg={siteConfig.error.image} title={siteConfig.error.title} />
       <Wrapper>

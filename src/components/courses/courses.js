@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Courses = props => {
   return (
     <div className={props.className}>
-      <h2>{props.title}</h2>
+      <h1>{props.title}</h1>
       {props.courses && (
         <React.Fragment>
           <div className="courses__content">

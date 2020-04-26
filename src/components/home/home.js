@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 
 import Layout from '../layout'
 import Hero from '../hero'
@@ -11,6 +11,7 @@ import About from '../about'
 import Skills from '../skills'
 import Timeline from '../timeline'
 import Courses from '../courses'
+import Education from '../education'
 
 const Separator = styled.hr`
   margin-top: 24px;
@@ -52,7 +53,7 @@ class Home extends React.Component {
               <Col xs={4} className="avatar">
                 <img
                   className="avatar__image"
-                  src="/images/avatar.jpg"
+                  src={this.props.avatar}
                   alt="user avatar"
                 />
                 <div className="social">
@@ -88,6 +89,14 @@ class Home extends React.Component {
                       <FaEnvelope className="social-icon" size="32" />
                     </a>
                   )}
+                  {this.props.siteConfig.cellphone && (
+                    <a
+                      className="social-link whatsapp"
+                      href={`https://wa.me/${this.props.siteConfig.cellphone}?text=${encodeURIComponent(this.props.whatsappMessage)}`}
+                    >
+                      <FaWhatsapp className="social-icon" size="32" />
+                    </a>
+                  )}
                 </div>
               </Col>
             </Row>
@@ -100,6 +109,7 @@ class Home extends React.Component {
               </Col>
             </Row>
             <Separator />
+            <Education education={this.props.education} title={this.props.titles.education}/>
             <Timeline jobs={this.props.jobs} title={this.props.titles.experience} />
             <Separator />
             <Courses legend={this.props.titles.certified} courses={this.props.siteConfig.courses} title={this.props.titles.courses}/>
@@ -153,5 +163,8 @@ export default styled(Home)`
 
   a.social-link.email:hover {
     color: #c23a2b;
+  }
+  a.social-link.whatsapp  :hover {
+    color: #25D366;
   }
 `

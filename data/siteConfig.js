@@ -6,13 +6,15 @@ module.exports = {
   twitterUsername: '_LeaplgZ',
   githubUsername: 'leapalazzolo',
   authorAvatar: '/images/avatar.jpg',
+  cellphone: '541124044573',
   error: {
     image: '/images/404.jpeg',
     title: '404',
     icon: '/images/ufo-and-cow.svg',
     altIcon: 'ufo and cow',
   },
-  jobsNumber: 6,
+  jobsNumber: 7,
+  educationNumber: 2,
   skills: [
     {
       name: 'Python',
@@ -147,7 +149,7 @@ module.exports = {
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'src/assets/icon.png',
+  icon: 'static/images/icon.png',
   headerLinks: [
     {
       label: 'Leandro Palazzolo',

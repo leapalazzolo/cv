@@ -16,13 +16,26 @@ const Index = ({ intl }) => {
       description: intl.formatMessage({ id: `jobs.${i}.description` }),
     }
   })
+  const translatedEducation = [...Array(siteConfig.educationNumber).keys()].map(
+    i => {
+      return {
+        name: intl.formatMessage({ id: `education.${i}.name` }),
+        place: intl.formatMessage({ id: `education.${i}.place` }),
+        date: {
+          from: intl.formatMessage({ id: `education.${i}.date.from` }),
+          to: intl.formatMessage({ id: `education.${i}.date.to` }),
+        },
+      }
+    }
+  )
   const translatedTitles = {
     about: intl.formatMessage({ id: 'titles.about' }),
     skills: intl.formatMessage({ id: 'titles.skills' }),
     experience: intl.formatMessage({ id: 'titles.experience' }),
     courses: intl.formatMessage({ id: 'titles.courses' }),
     certified: intl.formatMessage({ id: 'titles.certified' }),
-  }
+    education: intl.formatMessage({ id: 'titles.education' }),
+  } //TODO: Refactor
   return (
     <Home
       siteConfig={siteConfig}
@@ -32,6 +45,9 @@ const Index = ({ intl }) => {
       authorDescription={intl.formatMessage({ id: 'authorDescription' })}
       jobs={translatedJobs}
       titles={translatedTitles}
+      education={translatedEducation}
+      avatar={siteConfig.authorAvatar}
+      whatsappMessage={intl.formatMessage({ id: 'whatsappMessage' })}
     />
   )
 }
