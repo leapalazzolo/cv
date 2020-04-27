@@ -1,8 +1,9 @@
 {
   "name": "gatsby-starter-cv",
   "private": true,
-  "description": "A simple starter to get up and developing your digital curriculum with GatsbyJS",
-  "version": "0.0.1",
+  "description": "Leandro Palazzolo CV",
+  "homepage": "http://leapalazzolo.github.io/CV",
+  "version": "1.0.0",
   "author": "Leandro Palazzolo <leapalazzolo@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "1.10.6",
@@ -34,19 +35,16 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
-    "gh-pages": "2.1.1",
-    "prettier": "1.19.1"
+    "gh-pages": "^2.1.1",
+    "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/santosfrancisco/gatsby-starter-cv"
-  },
-  "bugs": {
-    "url": "https://github.com/santosfrancisco/gatsby-starter-cv/issues"
+    "url": "https://github.com/leapalazzolo/CV"
   }
 }

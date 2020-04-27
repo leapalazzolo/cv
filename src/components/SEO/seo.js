@@ -8,8 +8,7 @@ function SEO({ description, lang, meta, keywords, title, author }) {
     <StaticQuery
       query={detailsQuery}
       render={() => {
-        const metaDescription =
-          description
+        const metaDescription = description
         return (
           <Helmet
             htmlAttributes={{

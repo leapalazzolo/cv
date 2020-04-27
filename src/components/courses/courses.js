@@ -15,13 +15,16 @@ const Courses = props => {
                     <strong>{course.name}</strong>
                   </a>
                   <div className="courses__course-date">{course.date}</div>
-                    {course.license && (
-                      <div className="courses__course-license">
-                        {course.license}
-                      </div>
-                    )}
+                  {course.license && (
+                    <div className="courses__course-license">
+                      {course.license}
+                    </div>
+                  )}
                   {course.certification && (
-                    <div className="courses__course-star"> {props.legend + " ★"} </div>
+                    <div className="courses__course-star">
+                      {' '}
+                      {props.legend + ' ★'}{' '}
+                    </div>
                   )}
                 </div>
                 <hr />

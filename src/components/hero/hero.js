@@ -42,7 +42,6 @@ class Hero extends React.Component {
 }
 
 export default styled(Hero)`
-  
   ${p => `background-image: url(${p.heroImg || withPrefix(p.heroImg)});`}
   height: 70vh;
   background-attachment: fixed;

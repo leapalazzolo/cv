@@ -1,7 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter, FaWhatsapp } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaTwitter,
+  FaWhatsapp,
+} from 'react-icons/fa'
 
 import Layout from '../layout'
 import Hero from '../hero'
@@ -30,7 +36,6 @@ class Home extends React.Component {
     const title = this.props.siteTitle
     const tabTitle = this.props.tabTitle
     const { keywords } = this.props.siteConfig
-    console.log(this.props.siteConfig.headerLinks);
     return (
       <Layout
         location={this.props.location}
@@ -92,7 +97,9 @@ class Home extends React.Component {
                   {this.props.siteConfig.cellphone && (
                     <a
                       className="social-link whatsapp"
-                      href={`https://wa.me/${this.props.siteConfig.cellphone}?text=${encodeURIComponent(this.props.whatsappMessage)}`}
+                      href={`https://wa.me/${
+                        this.props.siteConfig.cellphone
+                      }?text=${encodeURIComponent(this.props.whatsappMessage)}`}
                     >
                       <FaWhatsapp className="social-icon" size="32" />
                     </a>
@@ -102,17 +109,33 @@ class Home extends React.Component {
             </Row>
             <Row>
               <Col xs={4} sm={4}>
-                <About title={this.props.titles.about} text={this.props.authorDescription} />
+                <About
+                  title={this.props.titles.about}
+                  text={this.props.authorDescription}
+                />
               </Col>
               <Col xs={4} sm={4}>
-                <Skills title={this.props.titles.skills} skills={this.props.siteConfig.skills} />
+                <Skills
+                  title={this.props.titles.skills}
+                  skills={this.props.siteConfig.skills}
+                />
               </Col>
             </Row>
             <Separator />
-            <Education education={this.props.education} title={this.props.titles.education}/>
-            <Timeline jobs={this.props.jobs} title={this.props.titles.experience} />
+            <Education
+              education={this.props.education}
+              title={this.props.titles.education}
+            />
+            <Timeline
+              jobs={this.props.jobs}
+              title={this.props.titles.experience}
+            />
             <Separator />
-            <Courses legend={this.props.titles.certified} courses={this.props.siteConfig.courses} title={this.props.titles.courses}/>
+            <Courses
+              legend={this.props.titles.certified}
+              courses={this.props.siteConfig.courses}
+              title={this.props.titles.courses}
+            />
           </Container>
         </Wrapper>
       </Layout>
@@ -164,7 +187,7 @@ export default styled(Home)`
   a.social-link.email:hover {
     color: #c23a2b;
   }
-  a.social-link.whatsapp  :hover {
-    color: #25D366;
+  a.social-link.whatsapp :hover {
+    color: #25d366;
   }
 `

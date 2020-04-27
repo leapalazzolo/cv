@@ -21,7 +21,8 @@ const Timeline = props => {
               <h2 className="timeline__title">
                 {job.occupation} <br />
                 <small className="timeline__title--subtitle">
-                  {job.company}<br />
+                  {job.company}
+                  <br />
                 </small>
                 <small className="timeline__title--small">
                   ({job.duration})

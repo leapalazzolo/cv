@@ -13,7 +13,7 @@ const Education = props => {
                 <div className="education__course">
                   <strong>{education.name}</strong>
                   <div className="education__course-date">
-                    {education.place} <br/>
+                    {education.place} <br />
                     {education.date.from + '-' + education.date.to}
                   </div>
                 </div>

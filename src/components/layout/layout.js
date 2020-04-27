@@ -8,7 +8,7 @@ const Layout = props => {
 
   return (
     <React.Fragment>
-      <Header headerLinks={headerLinks} url={url}/>
+      <Header headerLinks={headerLinks} url={url} />
       <ResetCSS />
       <GlobalStyle />
       <div>{children}</div>
