@@ -143,7 +143,7 @@ module.exports = {
     github: 'https://github.com/leapalazzolo',
     email: 'leapalazzolo@gmail.com',
   },
-  pathPrefix: '/CV', // Note: it must *not* have a trailing slash.
+  pathPrefix: '/CV',
   siteCover: '/images/cover.jpeg',
   googleAnalyticsId: 'UA-164784198-1',
   background_color: '#ffffff',

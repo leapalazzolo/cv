@@ -1,13 +1,13 @@
 const config = require('./data/siteConfig')
 
 module.exports = {
+  pathPrefix: "/CV",
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,
     author: config.authorName,
     ...config,
   },
-  pathPrefix: config.pathPrefix,
   plugins: [
     {
       resolve: `gatsby-plugin-intl`,
