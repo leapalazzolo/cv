@@ -1,7 +1,7 @@
 const config = require('./data/siteConfig')
 
 module.exports = {
-  pathPrefix: "/CV",
+  pathPrefix: config.pathPrefix,
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,

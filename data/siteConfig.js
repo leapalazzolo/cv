@@ -149,7 +149,7 @@ module.exports = {
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'static/images/icon.png',
+  icon: 'static/icon.png',
   headerLinks: [
     {
       label: 'Leandro Palazzolo',

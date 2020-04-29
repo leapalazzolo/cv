@@ -8,6 +8,8 @@ import Wrapper from '../components/wrapper'
 import SEO from '../components/SEO'
 
 import siteConfig from '../../data/siteConfig'
+import notFound from '../../static/404.jpeg'
+import ufoAndCow from '../../static/ufo-and-cow.svg'
 
 const MainTitle = styled.h1`
   line-height: 1.5;
@@ -32,11 +34,11 @@ const NotFoundPage = props => {
   return (
     <Layout headerLinks={headerLinks} location={props.location} noCover={true}>
       <SEO title={seo} />
-      <Hero heroImg={siteConfig.error.image} title={siteConfig.error.title} />
+      <Hero heroImg={notFound} title={siteConfig.error.title} />
       <Wrapper>
         <MainTitle>{title}</MainTitle>
         <Icon>
-          <img src={siteConfig.error.icon} alt={siteConfig.error.altIcon} />
+          <img src={ufoAndCow} alt={siteConfig.error.altIcon} />
         </Icon>
         <Text>{description}</Text>
       </Wrapper>

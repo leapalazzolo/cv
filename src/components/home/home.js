@@ -18,7 +18,6 @@ import Skills from '../skills'
 import Timeline from '../timeline'
 import Courses from '../courses'
 import Education from '../education'
-
 const Separator = styled.hr`
   margin-top: 24px;
   margin-bottom: 16px;
@@ -43,7 +42,7 @@ class Home extends React.Component {
           author={this.props.siteConfig.twitterUsername}
         />
 
-        <Hero heroImg={this.props.siteConfig.siteCover} title={title} />
+        <Hero heroImg={this.props.cover} title={title} />
 
         <Wrapper className={this.props.className}>
           <Container className="page-content" fluid>

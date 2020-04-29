@@ -2,6 +2,8 @@ import React from 'react'
 import siteConfig from '../../data/siteConfig'
 import Home from '../components/home'
 import { injectIntl } from 'gatsby-plugin-intl'
+import cover from '../../static/cover.jpeg'
+import avatar from '../../static/avatar.jpg'
 
 const Index = ({ intl }) => {
   const translatedJobs = [...Array(siteConfig.jobsNumber).keys()].map(i => {
@@ -46,8 +48,8 @@ const Index = ({ intl }) => {
       jobs={translatedJobs}
       titles={translatedTitles}
       education={translatedEducation}
-      avatar={siteConfig.authorAvatar}
       whatsappMessage={intl.formatMessage({ id: 'whatsappMessage' })}
+      {...{cover, avatar}}
     />
   )
 }
