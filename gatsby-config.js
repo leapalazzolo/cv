@@ -15,7 +15,7 @@ module.exports = {
         path: `${__dirname}/data/intl`,
         languages: [`en`, `es`],
         defaultLanguage: `en`,
-        redirect: false,
+        redirect: true,
       },
     },
     `gatsby-plugin-react-helmet`,

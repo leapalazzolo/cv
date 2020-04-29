@@ -1,11 +1,12 @@
 import React from 'react'
 import siteConfig from '../../data/siteConfig'
 import Home from '../components/home'
-import { injectIntl } from 'gatsby-plugin-intl'
+import { useIntl } from 'gatsby-plugin-intl'
 import cover from '../../static/cover.jpeg'
 import avatar from '../../static/avatar.jpg'
 
-const Index = ({ intl }) => {
+const Index = () => {
+  const intl = useIntl()
   const translatedJobs = [...Array(siteConfig.jobsNumber).keys()].map(i => {
     return {
       company: intl.formatMessage({ id: `jobs.${i}.company` }),
@@ -54,4 +55,4 @@ const Index = ({ intl }) => {
   )
 }
 
-export default injectIntl(Index)
+export default Index
