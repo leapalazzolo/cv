@@ -86,11 +86,11 @@ class Home extends React.Component {
                       <FaEnvelope className="social-icon" size="32" />
                     </a>
                   )}
-                  {this.props.siteConfig.cellphone && (
+                  {this.props.siteConfig.social.whatsApp && (
                     <a
                       className="social-link whatsapp"
                       href={`https://wa.me/${
-                        this.props.siteConfig.cellphone
+                        this.props.siteConfig.social.whatsApp
                       }?text=${encodeURIComponent(this.props.whatsappMessage)}`}
                     >
                       <FaWhatsapp className="social-icon" size="32" />

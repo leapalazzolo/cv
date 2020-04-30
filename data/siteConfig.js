@@ -6,7 +6,6 @@ module.exports = {
   twitterUsername: '_LeaplgZ',
   githubUsername: 'leapalazzolo',
   authorAvatar: '/images/avatar.jpg',
-  cellphone: '541124044573',
   error: {
     image: '/images/404.jpeg',
     title: '404',
@@ -138,10 +137,10 @@ module.exports = {
     },
   ],
   social: {
-    twitter: 'https://twitter.com/leaplgz',
     linkedin: 'https://www.linkedin.com/in/leandro-palazzolo-85350787/',
     github: 'https://github.com/leapalazzolo',
     email: 'leapalazzolo@gmail.com',
+    whatsApp: '541124044573',
   },
   pathPrefix: '/CV',
   siteCover: '/images/cover.jpeg',
