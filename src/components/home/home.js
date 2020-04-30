@@ -47,7 +47,7 @@ class Home extends React.Component {
         <Wrapper className={this.props.className}>
           <Container className="page-content" fluid>
             <Row>
-              <Col xs={4} className="avatar">
+              <Col xs={this.props.siteConfig.social.length} className="avatar">
                 <img
                   className="avatar__image"
                   src={this.props.avatar}
