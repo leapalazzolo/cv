@@ -14,7 +14,7 @@ const Education = props => {
                   <strong>{education.name}</strong>
                   <div className="education__course-date">
                     {education.place} <br />
-                    {education.date.from + '-' + education.date.to}
+                    {education.from + '-' + education.to}
                   </div>
                 </div>
                 <hr />

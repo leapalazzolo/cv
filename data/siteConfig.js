@@ -3,17 +3,36 @@ module.exports = {
   siteDescription: 'Leandro Palazzolo - Curriculum vitae',
   keyWords: ['gatsbyjs', 'react', 'curriculum', 'cv', 'devops', 'sre', 'azure'],
   authorName: 'Leandro Palazzolo',
-  twitterUsername: '_LeaplgZ',
   githubUsername: 'leapalazzolo',
   authorAvatar: '/images/avatar.jpg',
+  tabTitle: 'Leandro Palazzolo CV',
   error: {
-    image: '/images/404.jpeg',
-    title: '404',
-    icon: '/images/ufo-and-cow.svg',
-    altIcon: 'ufo and cow',
+    name: 'error',
+    keys: ['title', 'description', 'seo'],
+    notFound: '/images/404.jpeg',
+    ufoAndCow: '/images/ufo-and-cow.svg',
   },
-  jobsNumber: 7,
-  educationNumber: 2,
+  titles: {
+    name: 'titles',
+    keys: [
+      'about',
+      'skills',
+      'experience',
+      'courses',
+      'certified',
+      'education',
+    ],
+  },
+  jobs: {
+    name: 'jobs',
+    number: 7,
+    keys: ['company', 'month', 'year', 'duration', 'occupation', 'description'],
+  },
+  education: {
+    name: 'education',
+    number: 2,
+    keys: ['name', 'place', 'from', 'to'],
+  },
   skills: [
     {
       name: 'Python',
@@ -46,12 +65,12 @@ module.exports = {
   ],
   courses: [
     {
-      name: 'CCNA Routing and Switching',
+      name: 'Cisco CCNA - Routing and Switching',
       date: '02/2018',
       certification: false,
     },
     {
-      name: 'CCENT - Cisco Certified Entry Networking Technician',
+      name: 'Cisco CCENT - Networking Technician',
       date: '04/2018',
       license: 'CSCO13290467',
       certification: true,

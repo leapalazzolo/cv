@@ -71,25 +71,21 @@ const LinkedInLink = styled(props => (
   z-index: 10;
 `
 
-class Header extends React.Component {
-  render() {
-    const { headerLinks, url } = this.props
-
-    return (
-      <HeaderWrapper>
-        <HeaderNav>
-          <HeaderLinkGroup>
-            {headerLinks.map((headerLink, i) => (
-              <HeaderLink to={headerLink.url} key={`header-link-${i}`}>
-                {headerLink.label}
-              </HeaderLink>
-            ))}
-          </HeaderLinkGroup>
-          <LinkedInLink url={url} />
-        </HeaderNav>
-      </HeaderWrapper>
-    )
-  }
+const Header = ({ headerLinks, url }) => {
+  return (
+    <HeaderWrapper>
+      <HeaderNav>
+        <HeaderLinkGroup>
+          {headerLinks.map((headerLink, i) => (
+            <HeaderLink to={headerLink.url} key={`header-link-${i}`}>
+              {headerLink.label}
+            </HeaderLink>
+          ))}
+        </HeaderLinkGroup>
+        <LinkedInLink url={url} />
+      </HeaderNav>
+    </HeaderWrapper>
+  )
 }
 
 export default Header

@@ -10,6 +10,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-intl`,
       options: {
         path: `${__dirname}/data/intl`,
@@ -33,6 +40,7 @@ module.exports = {
         icon: config.icon,
       },
     },
+
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-google-analytics`,

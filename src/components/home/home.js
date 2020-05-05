@@ -8,7 +8,14 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from 'react-icons/fa'
+import { useIntl } from 'gatsby-plugin-intl'
+import {
+  translateObject,
+  translateObjectList,
+  translateId,
+} from '../../utils/translate'
 
+import { useSiteMetadata } from '../../hooks/use_site_metadata'
 import Layout from '../layout'
 import Hero from '../hero'
 import SEO from '../SEO'
@@ -18,121 +25,128 @@ import Skills from '../skills'
 import Timeline from '../timeline'
 import Courses from '../courses'
 import Education from '../education'
+
 const Separator = styled.hr`
   margin-top: 24px;
   margin-bottom: 16px;
 `
 
-class Home extends React.Component {
-  render() {
-    const title = this.props.siteTitle
-    const tabTitle = this.props.tabTitle
-    const { keywords } = this.props.siteConfig
-    return (
-      <Layout
-        location={this.props.location}
-        headerLinks={this.props.siteConfig.headerLinks}
-        url={this.props.siteConfig.social.linkedin}
-      >
-        <SEO
-          title={tabTitle}
-          keywords={keywords}
-          lang={this.props.language}
-          description={this.props.authorDescription}
-          author={this.props.siteConfig.twitterUsername}
-        />
+const Home = ({ className }) => {
+  const {
+    tabTitle,
+    keyWords,
+    headerLinks,
+    social,
+    siteCover,
+    authorAvatar,
+    skills,
+    courses,
+    jobs,
+    education,
+    titles,
+  } = useSiteMetadata()
+  const intl = useIntl()
+  const translatedtitles = translateObject('titles', titles.keys, intl)
+  const translatedJobs = translateObjectList(
+    'jobs',
+    jobs.keys,
+    intl,
+    jobs.number
+  )
+  const translatedEducation = translateObjectList(
+    'education',
+    education.keys,
+    intl,
+    education.number
+  )
+  const translatedAuthorDescription = translateId('authorDescription', intl)
+  const translatedLanguage = translateId('language', intl)
+  return (
+    <Layout headerLinks={headerLinks} url={social.linkedin}>
+      <SEO
+        title={tabTitle}
+        keyWords={keyWords}
+        lang={translatedLanguage}
+        description={translatedAuthorDescription}
+      />
 
-        <Hero heroImg={this.props.cover} title={title} />
+      <Hero heroImg={siteCover} title={translateId('siteTitle', intl)} />
 
-        <Wrapper className={this.props.className}>
-          <Container className="page-content" fluid>
-            <Row>
-              <Col xs={this.props.siteConfig.social.length} className="avatar">
-                <img
-                  className="avatar__image"
-                  src={this.props.avatar}
-                  alt="user avatar"
-                />
-                <div className="social">
-                  {this.props.siteConfig.social.github && (
-                    <a
-                      className="social-link github"
-                      href={this.props.siteConfig.social.github}
-                    >
-                      <FaGithub className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {this.props.siteConfig.social.linkedin && (
-                    <a
-                      className="social-link linkedin"
-                      href={this.props.siteConfig.social.linkedin}
-                    >
-                      <FaLinkedin className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {this.props.siteConfig.social.twitter && (
-                    <a
-                      className="social-link twitter"
-                      href={this.props.siteConfig.social.twitter}
-                    >
-                      <FaTwitter className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {this.props.siteConfig.social.email && (
-                    <a
-                      className="social-link email"
-                      href={`mailto:${this.props.siteConfig.social.email}`}
-                    >
-                      <FaEnvelope className="social-icon" size="32" />
-                    </a>
-                  )}
-                  {this.props.siteConfig.social.whatsApp && (
-                    <a
-                      className="social-link whatsapp"
-                      href={`https://wa.me/${
-                        this.props.siteConfig.social.whatsApp
-                      }?text=${encodeURIComponent(this.props.whatsappMessage)}`}
-                    >
-                      <FaWhatsapp className="social-icon" size="32" />
-                    </a>
-                  )}
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Col xs={4} sm={4}>
-                <About
-                  title={this.props.titles.about}
-                  text={this.props.authorDescription}
-                />
-              </Col>
-              <Col xs={4} sm={4}>
-                <Skills
-                  title={this.props.titles.skills}
-                  skills={this.props.siteConfig.skills}
-                />
-              </Col>
-            </Row>
-            <Separator />
-            <Education
-              education={this.props.education}
-              title={this.props.titles.education}
-            />
-            <Timeline
-              jobs={this.props.jobs}
-              title={this.props.titles.experience}
-            />
-            <Separator />
-            <Courses
-              legend={this.props.titles.certified}
-              courses={this.props.siteConfig.courses}
-              title={this.props.titles.courses}
-            />
-          </Container>
-        </Wrapper>
-      </Layout>
-    )
-  }
+      <Wrapper className={className}>
+        <Container className="page-content" fluid>
+          <Row>
+            <Col xs={social.length} className="avatar">
+              <img
+                className="avatar__image"
+                src={authorAvatar}
+                alt="Author avatar"
+              />
+              <div className="social">
+                {social.github && (
+                  <a className="social-link github" href={social.github}>
+                    <FaGithub className="social-icon" size="32" />
+                  </a>
+                )}
+                {social.linkedin && (
+                  <a className="social-link linkedin" href={social.linkedin}>
+                    <FaLinkedin className="social-icon" size="32" />
+                  </a>
+                )}
+                {social.twitter && (
+                  <a className="social-link twitter" href={social.twitter}>
+                    <FaTwitter className="social-icon" size="32" />
+                  </a>
+                )}
+                {social.email && (
+                  <a
+                    className="social-link email"
+                    href={`mailto:${social.email}`}
+                  >
+                    <FaEnvelope className="social-icon" size="32" />
+                  </a>
+                )}
+                {social.whatsApp && (
+                  <a
+                    className="social-link whatsapp"
+                    href={`https://wa.me/${
+                      social.whatsApp
+                    }?text=${encodeURIComponent(
+                      translateId('whatsappMessage', intl)
+                    )}`}
+                  >
+                    <FaWhatsapp className="social-icon" size="32" />
+                  </a>
+                )}
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={4} sm={4}>
+              <About
+                title={translatedtitles.about}
+                text={translatedAuthorDescription}
+              />
+            </Col>
+            <Col xs={4} sm={4}>
+              <Skills title={translatedtitles.skills} skills={skills} />
+            </Col>
+          </Row>
+          <Separator />
+          <Education
+            education={translatedEducation}
+            title={translatedtitles.education}
+          />
+          <Timeline jobs={translatedJobs} title={translatedtitles.experience} />
+          <Separator />
+          <Courses
+            legend={translatedtitles.certified}
+            courses={courses}
+            title={translatedtitles.courses}
+          />
+        </Container>
+      </Wrapper>
+    </Layout>
+  )
 }
 
 export default styled(Home)`

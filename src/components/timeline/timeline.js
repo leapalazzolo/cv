@@ -2,21 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import { config } from 'react-awesome-styled-grid'
 
-const Timeline = props => {
-  const { className, jobs, title } = props
+const Timeline = ({ className, jobs, title }) => {
   return (
     <div className={className}>
       <h1>{title}</h1>
       {jobs &&
         jobs.map(job => (
-          <article
-            key={job.begin.month + job.begin.year}
-            className="timeline__item"
-          >
+          <article key={job.month + job.year} className="timeline__item">
             <div className="inner">
               <span className="timeline__date">
-                <span className="timeline__month">{job.begin.month}</span>
-                <span className="timeline__year">{job.begin.year}</span>
+                <span className="timeline__month">{job.month}</span>
+                <span className="timeline__year">{job.year}</span>
               </span>
               <h2 className="timeline__title">
                 {job.occupation} <br />
