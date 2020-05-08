@@ -14,6 +14,7 @@ import {
   translateObjectList,
   translateId,
 } from '../../utils/translate'
+import Img from "gatsby-image"
 
 import { useSiteMetadata } from '../../hooks/use_site_metadata'
 import Layout from '../layout'
@@ -33,17 +34,19 @@ const Separator = styled.hr`
 
 const Home = ({ className }) => {
   const {
-    tabTitle,
-    keyWords,
-    headerLinks,
-    social,
-    siteCover,
-    authorAvatar,
-    skills,
-    courses,
-    jobs,
-    education,
-    titles,
+    siteMetadata: {
+      tabTitle,
+      keyWords,
+      headerLinks,
+      social,
+      skills,
+      courses,
+      jobs,
+      education,
+      titles,
+    },
+    cover,
+    avatar
   } = useSiteMetadata()
   const intl = useIntl()
   const translatedtitles = translateObject('titles', titles.keys, intl)
@@ -70,15 +73,14 @@ const Home = ({ className }) => {
         description={translatedAuthorDescription}
       />
 
-      <Hero heroImg={siteCover} title={translateId('siteTitle', intl)} />
-
+      <Hero heroImg={cover.childImageSharp.original.src} title={translateId('siteTitle', intl)} />
       <Wrapper className={className}>
         <Container className="page-content" fluid>
           <Row>
-            <Col xs={social.length} className="avatar">
-              <img
+            <Col xs={4} className="avatar">
+              <Img
                 className="avatar__image"
-                src={authorAvatar}
+                fixed={avatar.childImageSharp.fixed}
                 alt="Author avatar"
               />
               <div className="social">

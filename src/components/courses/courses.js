@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Col, Row } from 'react-awesome-styled-grid'
 
 const Courses = props => {
   return (
@@ -9,26 +10,33 @@ const Courses = props => {
         <React.Fragment>
           <div className="courses__content">
             {props.courses.map(course => (
-              <React.Fragment key={course.name}>
-                <div className="courses__course">
-                  <a className="courses__course-link" href={course.url}>
-                    <strong>{course.name}</strong>
-                  </a>
-                  <div className="courses__course-date">{course.date}</div>
-                  {course.license && (
-                    <div className="courses__course-license">
-                      {course.license}
-                    </div>
-                  )}
-                  {course.certification && (
-                    <div className="courses__course-star">
-                      {' '}
-                      {props.legend + ' ★'}{' '}
-                    </div>
-                  )}
-                </div>
-                <hr />
-              </React.Fragment>
+              <div className="courses__course">
+                <React.Fragment key={course.name}>
+                  <Row>
+                    <Col xs={3} md={7}>
+                      <strong>{course.name}</strong>
+                    </Col>
+                    {course.certification && (
+                      <Col xs={1} md={1}>
+                        <div className="courses__course-star">
+                          <a className="courses__course-link" href={course.url}>
+                            {props.legend}
+                          </a>
+                          {' ★'}
+                        </div>
+                      </Col>
+                    )}
+                  </Row>
+
+                  <Row>
+                    <Col xs={4} sm={4}>
+                      <div className="courses__course-date">{course.date}</div>
+                    </Col>
+                  </Row>
+
+                  <hr />
+                </React.Fragment>
+              </div>
             ))}
           </div>
         </React.Fragment>
@@ -38,7 +46,6 @@ const Courses = props => {
 }
 
 export default styled(Courses)`
-  position: relative;
   .courses__content {
     margin-bottom: 40px;
   }
@@ -61,17 +68,25 @@ export default styled(Courses)`
   }
 
   .courses__course-star {
-    position: absolute;
-    top: 0;
-    right: 0;
     font-size: 12px;
-  }
-
-  .courses__loader {
-    display: flex;
   }
 
   hr {
     margin-top: 16px;
+  }
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:active {
+    text-decoration: underline;
   }
 `

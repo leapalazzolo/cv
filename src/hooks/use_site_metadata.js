@@ -1,71 +1,96 @@
 import { useStaticQuery, graphql } from 'gatsby'
+
 export const useSiteMetadata = () => {
-  const { site } = useStaticQuery(
+  const {
+    site: { siteMetadata },
+    cover,
+    icon,
+    avatar,
+    notFound,
+  } = useStaticQuery(
     graphql`
-    query siteMetaDataQuery {
-      site {
-        siteMetadata {
-          description
-          author
-          authorName
-          display
-          githubUsername
-          siteDescription
-          authorAvatar
-          background_color
-          googleAnalyticsId
-          headerLinks {
-            label
-            url
+      query siteMetaDataQuery {
+        cover: file(relativePath: { eq: "cover.jpg" }) {
+          childImageSharp {
+            original {
+              src
+            }
           }
-          icon
-          keyWords
-          pathPrefix
-          siteCover
-          tabTitle
-          skills {
-            level
-            name
+        }
+        avatar: file(relativePath: { eq: "avatar.jpg" }) {
+          childImageSharp {
+            fixed(width: 200, height: 220) {
+              ...GatsbyImageSharpFixed
+            }
           }
-          social {
-            github
-            linkedin
-            email
-            whatsApp
+        }
+        notFound: file(relativePath: { eq: "404.jpg" }) {
+          childImageSharp {
+            original {
+              src
+            }
           }
-          theme_color
-          titles {
-            keys
-            name
-          }
-          jobs {
-            keys
-            name
-            number
-          }
-          error {
-            name
-            keys
-            notFound
-            ufoAndCow
-          }
-          education {
-            keys
-            name
-            number
-          }
-          courses {
-            date
-            certification
-            license
-            url
-            name
+        }
+        site {
+          siteMetadata {
+            description
+            author
+            display
+            githubUsername
+            description
+            authorAvatar
+            background_color
+            googleAnalyticsId
+            headerLinks {
+              label
+              url
+            }
+            icon
+            keyWords
+            pathPrefix
+            tabTitle
+            skills {
+              level
+              name
+            }
+            social {
+              github
+              linkedin
+              email
+              whatsApp
+            }
+            theme_color
+            titles {
+              keys
+              name
+            }
+            jobs {
+              keys
+              name
+              number
+            }
+            error {
+              name
+              keys
+              notFound
+              ufoAndCow
+            }
+            education {
+              keys
+              name
+              number
+            }
+            courses {
+              date
+              certification
+              license
+              url
+              name
+            }
           }
         }
       }
-    }
-    
     `
   )
-  return site.siteMetadata
+  return { siteMetadata, cover, icon, avatar, notFound }
 }

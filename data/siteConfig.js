@@ -1,16 +1,16 @@
 module.exports = {
-  siteTitle: 'Leandro Palazzolo CV',
-  siteDescription: 'Leandro Palazzolo - Curriculum vitae',
+  title: 'Leandro Palazzolo CV',
+  description: 'Leandro Palazzolo - Curriculum vitae',
   keyWords: ['gatsbyjs', 'react', 'curriculum', 'cv', 'devops', 'sre', 'azure'],
-  authorName: 'Leandro Palazzolo',
+  author: 'Leandro Palazzolo',
   githubUsername: 'leapalazzolo',
-  authorAvatar: '/images/avatar.jpg',
-  tabTitle: 'Leandro Palazzolo CV',
+  authorAvatar: 'images/avatar.jpg',
+  tabTitle: 'Leandro Palazzolo',
   error: {
     name: 'error',
     keys: ['title', 'description', 'seo'],
-    notFound: '/images/404.jpeg',
-    ufoAndCow: '/images/ufo-and-cow.svg',
+    notFound: 'images/404.jpeg',
+    ufoAndCow: 'images/ufo-and-cow.svg',
   },
   titles: {
     name: 'titles',
@@ -73,6 +73,7 @@ module.exports = {
       name: 'Cisco CCENT - Networking Technician',
       date: '04/2018',
       license: 'CSCO13290467',
+      url: "https://cisco.pearsoncred.com/durango/do/login?ownername=cisco&channel=cisco&basechannel=integral7&id=CSCO13290467",
       certification: true,
     },
     {
@@ -162,12 +163,11 @@ module.exports = {
     whatsApp: '541124044573',
   },
   pathPrefix: '/CV',
-  siteCover: '/images/cover.jpeg',
   googleAnalyticsId: 'UA-164784198-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'static/icon.png',
+  icon: 'images/icon.png',
   headerLinks: [
     {
       label: 'Leandro Palazzolo',

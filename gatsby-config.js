@@ -3,17 +3,14 @@ const config = require('./data/siteConfig')
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: config.siteTitle,
-    description: config.siteDescription,
-    author: config.authorName,
     ...config,
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -31,13 +28,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: config.siteTitle,
-        short_name: config.siteTitle,
+        name: config.title,
+        short_name: config.title,
         start_url: config.pathPrefix,
         background_color: config.background_color,
         theme_color: config.theme_color,
         display: config.display,
-        icon: config.icon,
+        icon: `src/${config.icon}`, // This path is relative to the root of the site.
       },
     },
 
@@ -48,8 +45,5 @@ module.exports = {
         trackingId: config.googleAnalyticsId,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 }
