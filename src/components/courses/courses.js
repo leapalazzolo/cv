@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Col, Row } from 'react-awesome-styled-grid'
 
 const Courses = props => {
   return (
@@ -10,33 +9,21 @@ const Courses = props => {
         <React.Fragment>
           <div className="courses__content">
             {props.courses.map(course => (
-              <div className="courses__course">
-                <React.Fragment key={course.name}>
-                  <Row>
-                    <Col xs={3} md={7}>
-                      <strong>{course.name}</strong>
-                    </Col>
-                    {course.certification && (
-                      <Col xs={1} md={1}>
-                        <div className="courses__course-star">
-                          <a className="courses__course-link" href={course.url}>
-                            {props.legend}
-                          </a>
-                          {' ★'}
-                        </div>
-                      </Col>
-                    )}
-                  </Row>
-
-                  <Row>
-                    <Col xs={4} sm={4}>
-                      <div className="courses__course-date">{course.date}</div>
-                    </Col>
-                  </Row>
+              <React.Fragment key={course.name}>
+                <div className="courses__course">
+                    <strong>{course.name}</strong>
+                  {course.certification && (
+                    <div className="courses__course-star">
+                      <a className="courses__course-link" href={course.url}>
+                        {props.legend + ' ★'}
+                      </a>
+                    </div>
+                  )}
+                  <div className="courses__course-date">{course.date}</div>
 
                   <hr />
-                </React.Fragment>
-              </div>
+                </div>
+              </React.Fragment>
             ))}
           </div>
         </React.Fragment>
@@ -68,6 +55,9 @@ export default styled(Courses)`
   }
 
   .courses__course-star {
+    position: absolute;
+    top: 0;
+    right: 0;
     font-size: 12px;
   }
 

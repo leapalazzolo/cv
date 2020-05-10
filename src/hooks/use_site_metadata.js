@@ -4,7 +4,6 @@ export const useSiteMetadata = () => {
   const {
     site: { siteMetadata },
     cover,
-    icon,
     avatar,
     notFound,
   } = useStaticQuery(
@@ -45,7 +44,6 @@ export const useSiteMetadata = () => {
               label
               url
             }
-            icon
             keyWords
             pathPrefix
             tabTitle
@@ -92,5 +90,5 @@ export const useSiteMetadata = () => {
       }
     `
   )
-  return { siteMetadata, cover, icon, avatar, notFound }
+  return { siteMetadata, cover, avatar, notFound }
 }

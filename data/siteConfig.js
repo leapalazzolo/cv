@@ -65,26 +65,26 @@ module.exports = {
   ],
   courses: [
     {
-      name: 'Cisco CCNA - Routing and Switching',
+      name: 'Cisco CCNA Routing and Switching',
       date: '02/2018',
       certification: false,
     },
     {
-      name: 'Cisco CCENT - Networking Technician',
+      name: 'Cisco CCENT',
       date: '04/2018',
       license: 'CSCO13290467',
       url: "https://cisco.pearsoncred.com/durango/do/login?ownername=cisco&channel=cisco&basechannel=integral7&id=CSCO13290467",
       certification: true,
     },
     {
-      name: 'Certified ScrumMaster®',
+      name: 'ScrumMaster®',
       date: '05/2018',
       license: '787340',
       url: 'https://www.scrumalliance.org/community/profile/lpalazzolo',
       certification: true,
     },
     {
-      name: 'Certified SAFe® 4 Practitioner',
+      name: 'SAFe® 4 Practitioner',
       date: '05/2018',
       license: '17672922',
       url:
@@ -92,7 +92,7 @@ module.exports = {
       certification: true,
     },
     {
-      name: 'AZ-900: Microsoft Azure Fundamentals',
+      name: 'Azure Fundamentals',
       date: '08/2019',
       license: '787340',
       url:

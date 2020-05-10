@@ -34,7 +34,7 @@ module.exports = {
         background_color: config.background_color,
         theme_color: config.theme_color,
         display: config.display,
-        icon: `src/${config.icon}`, // This path is relative to the root of the site.
+        icon: "static/icon.svg", // This path is relative to the root of the site.
       },
     },
 
