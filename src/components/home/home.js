@@ -14,7 +14,7 @@ import {
   translateObjectList,
   translateId,
 } from '../../utils/translate'
-import Img from "gatsby-image"
+import Img from 'gatsby-image'
 
 import { useSiteMetadata } from '../../hooks/use_site_metadata'
 import Layout from '../layout'
@@ -46,7 +46,7 @@ const Home = ({ className }) => {
       titles,
     },
     cover,
-    avatar
+    avatar,
   } = useSiteMetadata()
   const intl = useIntl()
   const translatedtitles = translateObject('titles', titles.keys, intl)
@@ -73,7 +73,10 @@ const Home = ({ className }) => {
         description={translatedAuthorDescription}
       />
 
-      <Hero heroImg={cover.childImageSharp.original.src} title={translateId('siteTitle', intl)} />
+      <Hero
+        heroImg={cover.childImageSharp.original.src}
+        title={translateId('siteTitle', intl)}
+      />
       <Wrapper className={className}>
         <Container className="page-content" fluid>
           <Row>

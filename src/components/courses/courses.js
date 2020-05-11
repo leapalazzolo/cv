@@ -11,7 +11,7 @@ const Courses = props => {
             {props.courses.map(course => (
               <React.Fragment key={course.name}>
                 <div className="courses__course">
-                    <strong>{course.name}</strong>
+                  <strong>{course.name}</strong>
                   {course.certification && (
                     <div className="courses__course-star">
                       <a className="courses__course-link" href={course.url}>

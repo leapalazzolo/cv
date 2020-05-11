@@ -52,7 +52,10 @@ const NotFoundPage = ({ location }) => {
         description={'Not found'}
         keyWords={keyWords}
       />
-      <Hero heroImg={notFound.childImageSharp.original.src} title={'Not found'} />
+      <Hero
+        heroImg={notFound.childImageSharp.original.src}
+        title={'Not found'}
+      />
       <Wrapper>
         <MainTitle>{translatedError.title}</MainTitle>
         <Icon>
