@@ -11,23 +11,18 @@ const Courses = props => {
             {props.courses.map(course => (
               <React.Fragment key={course.name}>
                 <div className="courses__course">
-                  <a className="courses__course-link" href={course.url}>
-                    <strong>{course.name}</strong>
-                  </a>
-                  <div className="courses__course-date">{course.date}</div>
-                  {course.license && (
-                    <div className="courses__course-license">
-                      {course.license}
-                    </div>
-                  )}
+                  <strong>{course.name}</strong>
                   {course.certification && (
                     <div className="courses__course-star">
-                      {' '}
-                      {props.legend + ' ★'}{' '}
+                      <a className="courses__course-link" href={course.url}>
+                        {props.legend + ' ★'}
+                      </a>
                     </div>
                   )}
+                  <div className="courses__course-date">{course.date}</div>
+
+                  <hr />
                 </div>
-                <hr />
               </React.Fragment>
             ))}
           </div>
@@ -38,7 +33,6 @@ const Courses = props => {
 }
 
 export default styled(Courses)`
-  position: relative;
   .courses__content {
     margin-bottom: 40px;
   }
@@ -67,11 +61,22 @@ export default styled(Courses)`
     font-size: 12px;
   }
 
-  .courses__loader {
-    display: flex;
-  }
-
   hr {
     margin-top: 16px;
+  }
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:active {
+    text-decoration: underline;
   }
 `

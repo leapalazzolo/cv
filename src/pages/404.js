@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { injectIntl } from 'gatsby-plugin-intl'
+import { useIntl } from 'gatsby-plugin-intl'
 
+import { translateObject, translateId } from '../utils/translate'
+import { useSiteMetadata } from '../hooks/use_site_metadata'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Wrapper from '../components/wrapper'
 import SEO from '../components/SEO'
-
-import siteConfig from '../../data/siteConfig'
+import ufoAndCow from '../images/ufo-and-cow.svg'
 
 const MainTitle = styled.h1`
   line-height: 1.5;
@@ -24,21 +26,42 @@ const Text = styled.p`
   text-align: center;
 `
 
-const NotFoundPage = props => {
-  const title = props.intl.formatMessage({ id: '404.title' })
-  const description = props.intl.formatMessage({ id: '404.description' })
-  const seo = props.intl.formatMessage({ id: '404.seo' })
-  const headerLinks = siteConfig.headerLinks
+const NotFoundPage = ({ location }) => {
+  const intl = useIntl()
+  const {
+    notFound,
+    siteMetadata: {
+      headerLinks,
+      error,
+      keyWords,
+      social: { linkedin },
+    },
+  } = useSiteMetadata()
+  const translatedError = translateObject(error.name, error.keys, intl)
+  const translatedLanguage = translateId('language', intl)
   return (
-    <Layout headerLinks={headerLinks} location={props.location} noCover={true}>
-      <SEO title={seo} />
-      <Hero heroImg={siteConfig.error.image} title={siteConfig.error.title} />
+    <Layout
+      headerLinks={headerLinks}
+      location={location}
+      noCover={true}
+      url={linkedin}
+    >
+      <SEO
+        title={translatedError.seo}
+        lang={translatedLanguage}
+        description={'Not found'}
+        keyWords={keyWords}
+      />
+      <Hero
+        heroImg={notFound.childImageSharp.original.src}
+        title={'Not found'}
+      />
       <Wrapper>
-        <MainTitle>{title}</MainTitle>
+        <MainTitle>{translatedError.title}</MainTitle>
         <Icon>
-          <img src={siteConfig.error.icon} alt={siteConfig.error.altIcon} />
+          <img src={ufoAndCow} alt={'Not found'} />
         </Icon>
-        <Text>{description}</Text>
+        <Text>{translatedError.description}</Text>
       </Wrapper>
     </Layout>
   )

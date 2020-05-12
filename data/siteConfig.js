@@ -1,20 +1,38 @@
 module.exports = {
-  siteTitle: 'Leandro Palazzolo CV',
-  siteDescription: 'Leandro Palazzolo - Curriculum vitae',
+  title: 'Leandro Palazzolo CV',
+  description: 'Leandro Palazzolo - Curriculum vitae',
   keyWords: ['gatsbyjs', 'react', 'curriculum', 'cv', 'devops', 'sre', 'azure'],
-  authorName: 'Leandro Palazzolo',
-  twitterUsername: '_LeaplgZ',
+  author: 'Leandro Palazzolo',
   githubUsername: 'leapalazzolo',
-  authorAvatar: '/images/avatar.jpg',
-  cellphone: '541124044573',
+  authorAvatar: 'images/avatar.jpg',
+  tabTitle: 'Leandro Palazzolo',
   error: {
-    image: '/images/404.jpeg',
-    title: '404',
-    icon: '/images/ufo-and-cow.svg',
-    altIcon: 'ufo and cow',
+    name: 'error',
+    keys: ['title', 'description', 'seo'],
+    notFound: 'images/404.jpeg',
+    ufoAndCow: 'images/ufo-and-cow.svg',
   },
-  jobsNumber: 7,
-  educationNumber: 2,
+  titles: {
+    name: 'titles',
+    keys: [
+      'about',
+      'skills',
+      'experience',
+      'courses',
+      'certified',
+      'education',
+    ],
+  },
+  jobs: {
+    name: 'jobs',
+    number: 7,
+    keys: ['company', 'month', 'year', 'duration', 'occupation', 'description'],
+  },
+  education: {
+    name: 'education',
+    number: 2,
+    keys: ['name', 'place', 'from', 'to'],
+  },
   skills: [
     {
       name: 'Python',
@@ -47,25 +65,26 @@ module.exports = {
   ],
   courses: [
     {
-      name: 'CCNA Routing and Switching',
+      name: 'Cisco CCNA Routing and Switching',
       date: '02/2018',
       certification: false,
     },
     {
-      name: 'CCENT - Cisco Certified Entry Networking Technician',
+      name: 'Cisco CCENT',
       date: '04/2018',
       license: 'CSCO13290467',
+      url: "https://cisco.pearsoncred.com/durango/do/login?ownername=cisco&channel=cisco&basechannel=integral7&id=CSCO13290467",
       certification: true,
     },
     {
-      name: 'Certified ScrumMaster®',
+      name: 'ScrumMaster®',
       date: '05/2018',
       license: '787340',
       url: 'https://www.scrumalliance.org/community/profile/lpalazzolo',
       certification: true,
     },
     {
-      name: 'Certified SAFe® 4 Practitioner',
+      name: 'SAFe® 4 Practitioner',
       date: '05/2018',
       license: '17672922',
       url:
@@ -73,7 +92,7 @@ module.exports = {
       certification: true,
     },
     {
-      name: 'AZ-900: Microsoft Azure Fundamentals',
+      name: 'Azure Fundamentals',
       date: '08/2019',
       license: '787340',
       url:
@@ -138,18 +157,17 @@ module.exports = {
     },
   ],
   social: {
-    twitter: 'https://twitter.com/leaplgz',
     linkedin: 'https://www.linkedin.com/in/leandro-palazzolo-85350787/',
     github: 'https://github.com/leapalazzolo',
     email: 'leapalazzolo@gmail.com',
+    whatsApp: '541124044573',
   },
-  pathPrefix: '/CV', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/cover.jpeg',
+  pathPrefix: '/CV',
   googleAnalyticsId: 'UA-164784198-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
-  icon: 'static/images/icon.png',
+  icon: 'images/icon.png',
   headerLinks: [
     {
       label: 'Leandro Palazzolo',

@@ -1,9 +1,11 @@
-sudo: required
 language: node_js
-
-node_js: node
-
-dist: trusty
-
-script:
-  - yarn install
+before_script:
+  - npm install -g gatsby
+node_js:
+  - "10"
+deploy:
+  provider: script
+  script: npm install && npm run deploy
+  skip_cleanup: true
+  on:
+    branch: development

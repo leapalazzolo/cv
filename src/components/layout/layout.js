@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import { ResetCSS, GlobalStyle } from '../styles'
 import Header from '../header'
 
-const Layout = props => {
-  const { headerLinks, children, url } = props
-
+const Layout = ({ headerLinks, children, url }) => {
   return (
     <React.Fragment>
       <Header headerLinks={headerLinks} url={url} />

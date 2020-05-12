@@ -1,100 +1,74 @@
 {
   "language": "es",
-  "tabTitle": "Leandro Palazzolo CV",
   "siteTitle": "Hola! Soy Leandro",
   "authorDescription": "Desarrollador especializado en el área de infraestructura. Experto en Python. Seguidor de las metodologías ágiles y las prácticas DevOps. Predicador del mundo Cloud. Desarrollador React y Gatsby como hobby.",
   "education": [
     {
       "name": "Ingeniería en informática",
       "place": "Universidad Nacional de La Matanza",
-      "date": {
-        "from": "04/2013",
-        "to": "12/2018"
-      }
+      "from": "04/2013",
+      "to": "12/2018"
     },
     {
       "name": "Secundario con orientación en informática",
       "place": "Instituto Juan XXIII",
-      "date": {
-        "from": "04/2007",
-        "to": "12/2012"
-      }
+      "from": "04/2007",
+      "to": "12/2012"
     }
   ],
   "jobs": [
     {
       "company": "GiveMagic",
-      "begin": {
-        "month": "feb",
-        "year": "2020"
-      },
-      "present": false,
+      "month": "feb",
+      "year": "2020",
       "duration": "Freelance",
       "occupation": "Cloud DevOps Engineer",
       "description": "Migración de la infraestructura a Azure."
     },
     {
       "company": "Medallia",
-      "begin": {
-        "month": "dic",
-        "year": "2019"
-      },
-      "present": true,
+      "month": "dic",
+      "year": "2019",
       "duration": "Presente",
       "occupation": "Site Reliability Engineer",
       "description": "Automatización de monitoreo y creación de herramientas para mantener la infraestructura. Monitorear y administrar proactivamente la disponibilidad de infraestructura y aplicaciones. Optimizar el rendimiento de los componentes de los servicios productivos. Colaborar con los equipos de ingeniería de productos para eliminar la deuda técnica."
     },
     {
       "company": "ExxonMobil",
-      "begin": {
-        "month": "ene",
-        "year": "2018"
-      },
-      "present": false,
+      "month": "ene",
+      "year": "2018",
       "duration": "2 años",
       "occupation": "Network DevOps Engineer",
       "description": "Desarrolo de web (React) y de microservicios (Python). Automatizar el despliegue, la configuración y el mantenimiento de redes L2/L3 (Cisco y Juniper). Crear, implementar y mantener una estrategia de containers utilizando OpenShift mediante pipelines. Mantener herramientas y tecnologías utilizadas en los procesos de DevOps para la entrega continua y la implementación de automatización. Desarrollo de playbooks en Ansible y scripts en Python para automatizar procesos. Migración de la infraestructura hacia Azure Cloud."
     },
     {
       "company": "Deloitte",
-      "begin": {
-        "month": "ago",
-        "year": "2016"
-      },
-      "present": false,
+      "month": "ago",
+      "year": "2016",
       "duration": "1,5 años",
       "occupation": "Analista de seguridad informática",
       "description": "Creación de pruebas de vulnerabilidad, análisis de riesgos y evaluaciones de seguridad. Investigación de estándares de seguridad y sistemas de seguridad. Definición, implementación y mantenimiento de RSA Archer GRC."
     },
     {
       "company": "Ministerio de Defensa",
-      "begin": {
-        "month": "jul",
-        "year": "2015"
-      },
-      "present": false,
+      "month": "jul",
+      "year": "2015",
       "duration": "1,5 años",
       "occupation": "Administrador de sistemas",
       "description": "Configuración y monitoreo con OSSIM. Virtualización (Xen). Administrador de sistemas (Debian)"
     },
     {
       "company": "J&B Solutions",
-      "begin": {
-        "month": "may",
-        "year": "2015"
-      },
-      "present": false,
+      "month": "may",
+      "year": "2015",
       "duration": "2 meses",
       "occupation": "Desarrollador backend",
       "description": "Desarrollador en backend (PHP)."
     },
     {
       "company": "Militec",
-      "begin": {
-        "month": "ene",
-        "year": "2014"
-      },
-      "present": false,
+      "month": "ene",
+      "year": "2014",
       "duration": "12 meses",
       "occupation": "Desarrollador",
       "description": "Desarrollo de aplicaciones en Visual Basic .NET. Soporte IT."
@@ -108,8 +82,8 @@
     "certified": "Certificado",
     "education": "Educación"
   },
-  "whatsappMessage": "Hola Leando. Te contacto porque vi tu CV online.",
-  "404": {
+  "whatsappMessage": "Hola Leandro. Te contacto porque vi tu CV en tu página web.",
+  "error": {
     "title": "Página no encontrada",
     "description": "Parece que has seguido un enlace roto o ingresado una URL que no existe en este sitio.",
     "seo": "Página no encontrada"
