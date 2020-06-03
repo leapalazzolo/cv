@@ -2,14 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-function SEO({ description, lang, keyWords, title }) {
+function SEO({ description, lang, meta, keyWords, title }) {
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
       title={title}
-      titleTemplate={title}
+      titleTemplate={`%s | ${title}`}
       meta={[
         {
           name: `description`,
@@ -39,21 +39,30 @@ function SEO({ description, lang, keyWords, title }) {
           name: `twitter:description`,
           content: description,
         },
-      ].concat(
-        keyWords.length > 0
-          ? {
-              name: `keywords`,
-              content: keyWords.join(`, `),
-            }
-          : []
-      )}
+      ]
+        .concat(
+          keyWords.length > 0
+            ? {
+                name: `keywords`,
+                content: keyWords.join(`, `),
+              }
+            : []
+        )
+        .concat(meta)}
     />
   )
+}
+
+SEO.defaultProps = {
+  lang: `en`,
+  meta: [],
+  keywords: [],
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
+  meta: PropTypes.array,
   keyWords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
 }
