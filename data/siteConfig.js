@@ -65,16 +65,50 @@ module.exports = {
   ],
   courses: [
     {
-      name: 'Cisco CCNA Routing and Switching',
-      date: '02/2018',
-      certification: false,
+      name: 'Acamica: Advanced front-end in React',
+      date: '08/2020',
+      certification: true,
+      url: 'https://www.acamica.com/front-end-avanzado-react',
     },
     {
-      name: 'Cisco CCENT',
-      date: '04/2018',
-      license: 'CSCO13290467',
-      url: "https://cisco.pearsoncred.com/durango/do/login?ownername=cisco&channel=cisco&basechannel=integral7&id=CSCO13290467",
+      name: 'Scrum Foundation Professional Certificate (SFPC)',
+      date: '08/2020',
       certification: true,
+      url: 'https://www.youracclaim.com/badges/ef3e2e44-6265-4c7d-b992-3db6ed41d8d8',
+    },
+    {
+      name: 'Lifelong Learning',
+      date: '08/2020',
+      certification: true,
+      url: 'https://www.youracclaim.com/badges/38b70c11-660a-480c-a792-67d1c5647d40',
+    },
+    
+    {
+      name: 'M220P: MongoDB for Python Developers',
+      date: '10/2019',
+      url:
+        'http://university.mongodb.com/course_completion/2b780a24-987d-4837-8de5-3c60fd9cf504',
+    },
+    {
+      name: 'Azure Fundamentals',
+      date: '08/2019',
+      license: '787340',
+      url:
+        'https://www.youracclaim.com/badges/0897b120-daa1-4cdf-8300-e1c1dcf2b9b1',
+      certification: true,
+    },
+    
+    {
+      name: 'Splunk fundamentals I',
+      date: '04/2019',
+      url:
+        'https://education.splunk.com/award/completion/81d1e230-926a-319b-9aa5-1e98219df953',
+    },
+    {
+      name: 'Splunk fundamentals II',
+      date: '04/2019',
+      url:
+        'https://education.splunk.com/award/completion/cb0d22a7-1515-3d0f-a380-14f53ae830fb',
     },
     {
       name: 'ScrumMaster®',
@@ -91,31 +125,24 @@ module.exports = {
         'https://www.youracclaim.com/badges/0897b120-daa1-4cdf-8300-e1c1dcf2b9b1',
       certification: true,
     },
+    
     {
-      name: 'Azure Fundamentals',
-      date: '08/2019',
-      license: '787340',
-      url:
-        'https://www.youracclaim.com/badges/0897b120-daa1-4cdf-8300-e1c1dcf2b9b1',
+      name: 'Cisco CCENT',
+      date: '04/2018',
+      license: 'CSCO13290467',
+      url: "https://cisco.pearsoncred.com/durango/do/login?ownername=cisco&channel=cisco&basechannel=integral7&id=CSCO13290467",
       certification: true,
     },
     {
-      name: 'Splunk fundamentals I',
-      date: '04/2019',
-      url:
-        'https://education.splunk.com/award/completion/81d1e230-926a-319b-9aa5-1e98219df953',
+      name: 'Cisco CCNA Routing and Switching',
+      date: '02/2018',
+      certification: false,
     },
     {
-      name: 'Splunk fundamentals II',
-      date: '04/2019',
-      url:
-        'https://education.splunk.com/award/completion/cb0d22a7-1515-3d0f-a380-14f53ae830fb',
+      name: 'CloudAcademy: GitOps',
     },
     {
-      name: 'M220P: MongoDB for Python Developers',
-      date: '10/2019',
-      url:
-        'http://university.mongodb.com/course_completion/2b780a24-987d-4837-8de5-3c60fd9cf504',
+      name: 'CloudAcademy: NGINX',
     },
     {
       name: 'Red Hat (RH134) System Administration II - RHEL8',
