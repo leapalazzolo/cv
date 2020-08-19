@@ -71,13 +71,13 @@ module.exports = {
       url: 'https://www.acamica.com/front-end-avanzado-react',
     },
     {
-      name: 'Scrum Foundation Professional Certificate (SFPC)',
+      name: 'CertiProf: Scrum Foundation Professional Certificate (SFPC)',
       date: '08/2020',
       certification: true,
       url: 'https://www.youracclaim.com/badges/ef3e2e44-6265-4c7d-b992-3db6ed41d8d8',
     },
     {
-      name: 'Lifelong Learning',
+      name: 'CertiProf: Lifelong Learning',
       date: '08/2020',
       certification: true,
       url: 'https://www.youracclaim.com/badges/38b70c11-660a-480c-a792-67d1c5647d40',
@@ -99,6 +99,10 @@ module.exports = {
     },
     
     {
+      name: 'Red Hat (RH134) System Administration II - RHEL8',
+      date: '12/2019',
+    },
+    {
       name: 'Splunk fundamentals I',
       date: '04/2019',
       url:
@@ -111,7 +115,7 @@ module.exports = {
         'https://education.splunk.com/award/completion/cb0d22a7-1515-3d0f-a380-14f53ae830fb',
     },
     {
-      name: 'ScrumMaster®',
+      name: 'ScrumAlliance: ScrumMaster®',
       date: '05/2018',
       license: '787340',
       url: 'https://www.scrumalliance.org/community/profile/lpalazzolo',
@@ -143,10 +147,6 @@ module.exports = {
     },
     {
       name: 'CloudAcademy: NGINX',
-    },
-    {
-      name: 'Red Hat (RH134) System Administration II - RHEL8',
-      date: '12/2019',
     },
     {
       name: 'Lynda.com: DevOps Foundations: DevSecOps',
