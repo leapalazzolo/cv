@@ -115,7 +115,7 @@ module.exports = {
         'https://education.splunk.com/award/completion/cb0d22a7-1515-3d0f-a380-14f53ae830fb',
     },
     {
-      name: 'ScrumAlliance: ScrumMaster®',
+      name: 'ScrumMaster®',
       date: '05/2018',
       license: '787340',
       url: 'https://www.scrumalliance.org/community/profile/lpalazzolo',
