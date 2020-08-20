@@ -65,19 +65,19 @@ module.exports = {
   ],
   courses: [
     {
-      name: 'Acamica: Advanced front-end in React',
+      name: 'Advanced React',
       date: '08/2020',
       certification: true,
       url: 'https://www.acamica.com/front-end-avanzado-react',
     },
     {
-      name: 'CertiProf: Scrum Foundation Professional Certificate (SFPC)',
+      name: 'Scrum Professional',
       date: '08/2020',
       certification: true,
       url: 'https://www.youracclaim.com/badges/ef3e2e44-6265-4c7d-b992-3db6ed41d8d8',
     },
     {
-      name: 'CertiProf: Lifelong Learning',
+      name: 'Lifelong Learning',
       date: '08/2020',
       certification: true,
       url: 'https://www.youracclaim.com/badges/38b70c11-660a-480c-a792-67d1c5647d40',
