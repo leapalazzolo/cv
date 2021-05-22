@@ -17,6 +17,15 @@
     }
   ],
   "jobs": [
+    
+    {
+      "company": "Wildlife Studios",
+      "month": "oct",
+      "year": "2020",
+      "duration": "Presente",
+      "occupation": "Software Engineer",
+      "description": "Desarrollo de servicios en Golang con tiempos de respuesta críticos usando Redis y PostgreSQL. Desarrollo de servicios en Python para servir un modelo de machine learning (MLflow) y notebooks en Databricks. Mantenimiento y creación de la infraestructura en AWS usando Terraform. Monitoreo de los servicios usando Datadog, Prometheus, Jaeger y OpsGenie. Creación y mantenimiento de la CI/CD usando GitLab CI/CD."
+    },
     {
       "company": "GiveMagic",
       "month": "feb",
@@ -29,7 +38,7 @@
       "company": "Medallia",
       "month": "dic",
       "year": "2019",
-      "duration": "Presente",
+      "duration": "9 meses",
       "occupation": "Site Reliability Engineer",
       "description": "Automatización de monitoreo y creación de herramientas para mantener la infraestructura. Monitorear y administrar proactivamente la disponibilidad de infraestructura y aplicaciones. Optimizar el rendimiento de los componentes de los servicios productivos. Colaborar con los equipos de ingeniería de productos para eliminar la deuda técnica."
     },
