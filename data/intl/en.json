@@ -18,6 +18,14 @@
   ],
   "jobs": [
     {
+      "company": "Wildlife Studios",
+      "month": "oct",
+      "year": "2020",
+      "duration": "Presente",
+      "occupation": "Software Engineer",
+      "description": "Development of services in Golang with critical response times using Redis and PostgreSQL. Development of services in Python to serve a machine learning model (MLflow) and notebooks in Databricks. Maintenance and creation of the infrastructure in AWS using Terraform. Monitoring of services using Datadog, Prometheus, Jaeger and OpsGenie. CI / CD creation and maintenance using GitLab CI / CD."
+    },
+    {
       "company": "GiveMagic",
       "month": "feb",
       "year": "2020",

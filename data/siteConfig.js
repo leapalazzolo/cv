@@ -25,7 +25,7 @@ module.exports = {
   },
   jobs: {
     name: 'jobs',
-    number: 7,
+    number: 8,
     keys: ['company', 'month', 'year', 'duration', 'occupation', 'description'],
   },
   education: {
