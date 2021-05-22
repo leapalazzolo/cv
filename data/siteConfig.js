@@ -39,12 +39,21 @@ module.exports = {
       level: 95,
     },
     {
-      name: 'DevOps',
+      name: 'Golang',
+      level: 90,
+    },
+    {
+      name: 'DevOps & CI/CD',
       level: 85,
     },
     {
-      name: 'Azure',
+      name: 'Cloud (AWS/Azure)',
       level: 85,
+    },
+ 
+    {
+      name: 'Kubernetes/Docker',
+      level: 80,
     },
     {
       name: 'React',
@@ -55,12 +64,16 @@ module.exports = {
       level: 75,
     },
     {
-      name: 'Containers',
-      level: 75,
+      name: 'MongoDB',
+      level: 70,
     },
     {
-      name: 'MongoDB',
-      level: 65,
+      name: 'Postgresql',
+      level: 70,
+    },
+    {
+      name: 'Datadog',
+      level: 70,
     },
   ],
   courses: [
