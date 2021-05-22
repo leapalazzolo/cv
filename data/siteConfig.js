@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Leandro Palazzolo CV',
-  description: 'Leandro Palazzolo - Curriculum vitae',
+  description: 'Curriculum vitae',
   keyWords: ['gatsbyjs', 'react', 'curriculum', 'cv', 'devops', 'sre', 'azure'],
   author: 'Leandro Palazzolo',
   githubUsername: 'leapalazzolo',

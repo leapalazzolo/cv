@@ -9,7 +9,7 @@ function SEO({ description, lang, meta, keyWords, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${title}`}
+      titleTemplate={`%s | CV`}
       meta={[
         {
           name: `description`,
