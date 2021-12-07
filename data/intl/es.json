@@ -1,7 +1,7 @@
 {
   "language": "es",
   "siteTitle": "Hola! Soy Leandro",
-  "authorDescription": "Desarrollador especializado en microservicios (Python y Golang). Experto en metodologías ágiles y las prácticas DevOps. Fan de la infrasestructura cómo código y sus beneficios. Predicador del mundo Cloud. React y Gatsby desarrollador como hobby.",
+  "authorDescription": "Software engineer en Python y Golang. Experto en metodologías ágiles y las prácticas DevOps. Fan de la infrasestructura cómo código. Predicador del Cloud. React y Gatsby desarrollador como hobby.",
   "education": [
     {
       "name": "Ingeniería en informática",
@@ -17,7 +17,14 @@
     }
   ],
   "jobs": [
-    
+    {
+      "company": "Coderhouse",
+      "month": "jul",
+      "year": "2021",
+      "duration": "Presente",
+      "occupation": "Tutor de Python",
+      "description": "Ayudarlos a comprender conceptos clave sobre Python y Django. Proporcionar a los estudiantes feedback positivo y constructivo."
+    },
     {
       "company": "Wildlife Studios",
       "month": "oct",

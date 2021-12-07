@@ -25,7 +25,7 @@ module.exports = {
   },
   jobs: {
     name: 'jobs',
-    number: 8,
+    number: 9,
     keys: ['company', 'month', 'year', 'duration', 'occupation', 'description'],
   },
   education: {
@@ -77,6 +77,12 @@ module.exports = {
     },
   ],
   courses: [
+    {
+      name: 'Go Bootcamp: Master Golang with 1000+ Exercises and Projects',
+      date: '06/2021',
+      certification: true,
+      url: 'https://www.udemy.com/certificate/UC-f7b075fb-250f-4877-ae16-19cb97b32c9a/',
+    },
     {
       name: 'Advanced React',
       date: '08/2020',
