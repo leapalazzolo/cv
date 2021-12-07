@@ -1,7 +1,7 @@
 {
   "language": "en",
   "siteTitle": "Hi! I'm Leandro",
-  "authorDescription": "Developer specialized in microservices (Python and Golang). Expert in agile methodologies and DevOps practices. Fan of the infrastructure as code and its benefits. Preacher of the Cloud world. React and Gatsby developer as a hobby.",
+  "authorDescription": "Python and Golang software engineer. Expert in agile methodologies and DevOps practices. Fan of the infrastructure as code. Preacher of Cloud computing. React and Gatsby developer as a hobby.",
   "education": [
     {
       "name": "Computer engineering",
@@ -18,18 +18,26 @@
   ],
   "jobs": [
     {
+      "company": "Coderhouse",
+      "month": "jul",
+      "year": "2021",
+      "duration": "Present",
+      "occupation": "Python Tutor",
+      "description": "Working with students to help them understand key concepts about Python and Django framework. Providing students positive and constructive feedback."
+    },
+    {
       "company": "Wildlife Studios",
       "month": "oct",
       "year": "2020",
-      "duration": "Presente",
+      "duration": "Present",
       "occupation": "Software Engineer",
-      "description": "Development of services in Golang with critical response times using Redis and PostgreSQL. Development of services in Python to serve a machine learning model (MLflow) and notebooks in Databricks. Maintenance and creation of the infrastructure in AWS using Terraform. Monitoring of services using Datadog, Prometheus, Jaeger and OpsGenie. CI / CD creation and maintenance using GitLab CI / CD."
+      "description": "Development of microservices in Golang with critical response times using Redis and PostgreSQL. Development of services in Python to serve a machine learning model and notebooks in Databricks. ETL development using Python, Airflow, and Databricks. Maintenance and creation of the infrastructure in AWS using Terraform. Monitoring of services using Datadog, Jaeger and OpsGenie. Infrastructure management using Terraform, GitLab CI/CD, Flux on AWS Kubernetes."
     },
     {
       "company": "GiveMagic",
       "month": "feb",
       "year": "2020",
-      "duration": "Freelance",
+      "duration": "6 months",
       "occupation": "Cloud DevOps Engineer",
       "description": "Infrastructure migration to Azure."
     },
