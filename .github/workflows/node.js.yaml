@@ -17,10 +17,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Deploy web using Node.js ${{ matrix.node-version }}
+    - name: Build using Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npm run deploy  -- -r https://${{ secrets.DEPLOY_TOKEN }}@github.com/leapalazzolo/CV.git
+    - run: npm build
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.DEPLOY_TOKEN }}
+        publish_dir: ./public
