@@ -21,7 +21,7 @@
       "company": "BlockWallet",
       "month": "feb",
       "year": "2022",
-      "duration": "present",
+      "duration": "Present",
       "occupation": "Software Engineer",
       "description": "Development of microservices in Golang with Redis. Maintenance and creation of the infrastructure in AWS using Terraform. Monitoring of services on kubernetes using Grafana, Prometheus and Alertmanager. Infrastructure management using Terraform, GtiHub Actions and Flux."
     },
