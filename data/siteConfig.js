@@ -25,7 +25,7 @@ module.exports = {
   },
   jobs: {
     name: 'jobs',
-    number: 9,
+    number: 10,
     keys: ['company', 'month', 'year', 'duration', 'occupation', 'description'],
   },
   education: {
@@ -64,7 +64,7 @@ module.exports = {
       level: 75,
     },
     {
-      name: 'MongoDB',
+      name: 'Blockchain',
       level: 70,
     },
     {

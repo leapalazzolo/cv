@@ -18,6 +18,14 @@
   ],
   "jobs": [
     {
+      "company": "BlockWallet",
+      "month": "feb",
+      "year": "2022",
+      "duration": "present",
+      "occupation": "Software Engineer",
+      "description": "Development of microservices in Golang with Redis. Maintenance and creation of the infrastructure in AWS using Terraform. Monitoring of services on kubernetes using Grafana, Prometheus and Alertmanager. Infrastructure management using Terraform, GtiHub Actions and Flux."
+    },
+    {
       "company": "Coderhouse",
       "month": "jul",
       "year": "2021",
@@ -29,7 +37,7 @@
       "company": "Wildlife Studios",
       "month": "oct",
       "year": "2020",
-      "duration": "Present",
+      "duration": "1,5 years",
       "occupation": "Software Engineer",
       "description": "Development of microservices in Golang with critical response times using Redis and PostgreSQL. Development of services in Python to serve a machine learning model and notebooks in Databricks. ETL development using Python, Airflow, and Databricks. Maintenance and creation of the infrastructure in AWS using Terraform. Monitoring of services using Datadog, Jaeger and OpsGenie. Infrastructure management using Terraform, GitLab CI/CD, Flux on AWS Kubernetes."
     },
