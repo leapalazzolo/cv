@@ -18,6 +18,14 @@
   ],
   "jobs": [
     {
+      "company": "BlockWallet",
+      "month": "feb",
+      "year": "2022",
+      "duration": "Present",
+      "occupation": "Software Engineer",
+      "description": "Desarrollo de microservicios en Golang con Redis. Mantenimiento de la infraestructura en AWS usando Terraform. Monitoreo de los microservicios de kubernetes usando Grafana, Prometheus y Alertmanager. Uso de GtiHub Actions y Flux para el CI/CD."
+    },
+    {
       "company": "Coderhouse",
       "month": "jul",
       "year": "2021",
