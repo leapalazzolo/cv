@@ -23,7 +23,7 @@
       "year": "2022",
       "duration": "Present",
       "occupation": "Software Engineer",
-      "description": "Development of microservices in Golang with Redis. Maintenance and creation of the infrastructure in AWS using Terraform. Monitoring of services on kubernetes using Grafana, Prometheus and Alertmanager. Infrastructure management using Terraform, GtiHub Actions and Flux."
+      "description": "Development of an Ethereum and EVM-compatible blockchains wallet (Typescript and React) focused on privacy. Development of microservices in Golang with Redis. Maintenance and creation of the infrastructure in AWS using Terraform. Monitoring of services on kubernetes using Grafana, Prometheus and Alertmanager. Infrastructure management using Terraform, GtiHub Actions and Flux."
     },
     {
       "company": "Coderhouse",

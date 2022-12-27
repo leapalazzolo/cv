@@ -43,6 +43,14 @@ module.exports = {
       level: 90,
     },
     {
+      name: 'Cosmos/Terdermint',
+      level: 85,
+    },
+    {
+      name: 'Ethereum/EVM/Solidity',
+      level: 85,
+    },
+    {
       name: 'DevOps & CI/CD',
       level: 85,
     },
@@ -50,8 +58,7 @@ module.exports = {
       name: 'Cloud (AWS/Azure)',
       level: 85,
     },
- 
-    {
+     {
       name: 'Kubernetes/Docker',
       level: 80,
     },
@@ -59,20 +66,14 @@ module.exports = {
       name: 'React',
       level: 75,
     },
-    {
-      name: 'Linux',
-      level: 75,
-    },
-    {
-      name: 'Blockchain',
-      level: 70,
-    },
-    {
-      name: 'Postgresql',
-      level: 70,
-    },
   ],
   courses: [
+    {
+      name: 'Cosmos Academy: Interchain Developer Academy',
+      date: '12/2022',
+      certification: true,
+      url: 'https://badgr.com/public/badges/gm-xgy4UQKOdXSIsQ8nZTg',
+    },
     {
       name: 'Scrum Professional',
       date: '08/2020',

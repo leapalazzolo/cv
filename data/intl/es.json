@@ -23,7 +23,7 @@
       "year": "2022",
       "duration": "Present",
       "occupation": "Software Engineer",
-      "description": "Desarrollo de microservicios en Golang con Redis. Mantenimiento de la infraestructura en AWS usando Terraform. Monitoreo de los microservicios de kubernetes usando Grafana, Prometheus y Alertmanager. Uso de GtiHub Actions y Flux para el CI/CD."
+      "description": "Desarrollo de una wallet compatible con Ethereum y blockchains compatibles con EVM usando Typescript and React. Desarrollo de microservicios en Golang con Redis. Mantenimiento de la infraestructura en AWS usando Terraform. Monitoreo de los microservicios de kubernetes usando Grafana, Prometheus y Alertmanager. Uso de GtiHub Actions y Flux para el CI/CD."
     },
     {
       "company": "Coderhouse",
