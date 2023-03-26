@@ -63,11 +63,17 @@ module.exports = {
       level: 80,
     },
     {
-      name: 'React',
+      name: 'Rust',
       level: 75,
     },
   ],
   courses: [
+    {
+      name: 'Alchemy University: Certified Ethereum Developer',
+      date: '3/2023',
+      certification: true,
+      url: 'https://opensea.io/assets/matic/0x60576a64851c5b42e8c57e3e4a5cf3cf4eeb2ed6/15055',
+    },
     {
       name: 'Cosmos Academy: Interchain Developer Academy',
       date: '12/2022',
